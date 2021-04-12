@@ -22,3 +22,8 @@ body {
     font-size: large;
     opacity: 90%;
   }
+
+  .logo-head {
+    width: 45vw;
+    height: auto;
+  }
