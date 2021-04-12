@@ -12,6 +12,7 @@ body {
     font-family: 'Lato', 'Roboto', sans-serif;
   }
 
+/* Font Stylings */
   h1 {
     font-weight: bold;
     font-size: xx-large;
@@ -23,7 +24,33 @@ body {
     opacity: 90%;
   }
 
+/* Page Logo styling */
+
   .logo-head {
     width: 45vw;
     height: auto;
+  }
+
+/* Image select funtionality styling */
+
+  .img-select {
+    display: inline-block;
+    border: 10px solid transparent;
+    border-radius: 8%;
+    margin: 0;
+    padding: 0;
+    transition-duration: 0.1s;
+    cursor: pointer;
+  }
+
+  .img-select:hover {
+    opacity: 70%;
+  }
+  
+  .activeimg {
+    border: 10px solid orange;
+  }
+
+  .img-rounded {
+    border-radius: 8%;
   }
