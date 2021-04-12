@@ -16,3 +16,9 @@ body {
     font-weight: bold;
     font-size: xx-large;
   }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    opacity: 90%;
+  }
