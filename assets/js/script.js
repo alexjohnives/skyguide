@@ -1,4 +1,4 @@
-// This script ensures only once the webpage is fully loaded is the addImageSelector function applied 
+// This script ensures that as the webpage is loaded the addImageSelector function is applied. 
 
 window.addEventListener('load', (event) => {
   
@@ -20,7 +20,7 @@ window.addEventListener('load', (event) => {
   });
   }
 
-// This function displays the corresponding div with each image 
+// This function displays the corresponding div with each image. 
 
   function selectImage(elementId) {
     var x = document.getElementById(elementId);
