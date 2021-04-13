@@ -54,3 +54,7 @@ body {
   .img-rounded {
     border-radius: 8%;
   }
+
+  .activeimg {
+    border: 10px solid orange;
+  }
