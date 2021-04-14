@@ -31,6 +31,13 @@ body {
     height: auto;
   }
 
+/* Home logo styling */
+
+  /* .home-logo {
+    width: 55vw;
+    height: auto;
+  } */
+
 /* Image select funtionality styling */
 
   .img-select {
@@ -57,4 +64,18 @@ body {
 
   .activeimg {
     border: 10px solid orange;
+  }
+
+  /* Footer */
+  .footer {
+    background: #ffffff;
+    opacity: 60%;
+  }
+  
+  .footer i {
+    font-size: 1.8rem;
+  }
+  
+  .footer i:hover {
+    opacity: 70%;
   }
