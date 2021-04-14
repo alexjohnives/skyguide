@@ -21,7 +21,7 @@
    },
    "files.autoSave": "off",
    "workbench.colorTheme": "Visual Studio Dark",
-   "editor.defaultFormatter": "HookyQR.beautify",
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
    "editor.formatOnSave": true,
    "liveServer.settings.port": 5501,
    "[html]": {
