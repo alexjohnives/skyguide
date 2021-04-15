@@ -1,6 +1,6 @@
 let wingInformation = {
   wingImage0: {
-    id: 'ilseWl1',
+    id: 'wingInfo1',
     title: 'Ilse WL 1',
     description1: 'The Child of Light is in the first cave to the left.',
     description2:
@@ -8,7 +8,7 @@ let wingInformation = {
     youtubeLink: 'https://www.youtube.com/embed/_n7BPwsAshE',
   },
   wingImage1: {
-    id: 'ilseWl2',
+    id: 'wingInfo2',
     title: 'Ilse WL 2',
     description1:
       'Go to the right of the cave entrance where you receive Winged Light 1, and climb above the mouth of the cave.',
@@ -17,7 +17,7 @@ let wingInformation = {
     youtubeLink: 'https://www.youtube.com/embed/33lNvxzuWj8',
   },
   wingImage2: {
-    id: 'ilseWl3',
+    id: 'wingInfo3',
     title: 'Ilse WL 3',
     description1:
       'Go straight ahead to the ramp further away in front of the temple. The Child of Light is at the top of the ramp.',
@@ -26,7 +26,7 @@ let wingInformation = {
     youtubeLink: 'https://www.youtube.com/embed/lujlEcccQIk',
   },
   wingImage3: {
-    id: 'ilseWl4',
+    id: 'wingInfo4',
     title: 'Ilse WL 4',
     description1:
       'Go to the very right of the area, behind the ramp to the right. There is a cave with the next Child of Light.',
@@ -35,7 +35,7 @@ let wingInformation = {
     youtubeLink: 'https://www.youtube.com/embed/aIiJ-iYxTzc',
   },
   wingImage4: {
-    id: 'ilseWl5',
+    id: 'wingInfo5',
     title: 'Ilse WL 5',
     description1:
       'ROUTE 1: Two person puzzle: When complete release the butterflies and fly up to where your wing awaits!',
@@ -53,7 +53,7 @@ function getCardHTML(wingTitle) {
   let wingCardInformation = `
   <div class="row" id="${wings['id']}">
     <div class="col-sm">
-        <h2 class="intro mt-3">${wings['title']}</h2>
+        <h2 class="wing-title mt-3">${wings['title']}</h2>
         <p class="mt-3">${wings['description1']}</p>
         <p class="mt-3">${wings['description2']}</p>
     </div>
