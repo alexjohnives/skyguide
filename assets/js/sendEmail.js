@@ -1,3 +1,4 @@
+// Created contact form and followed CI Emailjs lesson for javascript 
 function sendMail(contactForm) {
   emailjs
     .send('gmail', 'thatskyguide', {
