@@ -1,5 +1,6 @@
 let wingInformation = {
   wingImage0: {
+    id: 'ilseWl1',
     title: 'Ilse WL 1',
     description1: 'The Child of Light is in the first cave to the left.',
     description2:
@@ -7,6 +8,7 @@ let wingInformation = {
     youtubeLink: 'https://www.youtube.com/embed/_n7BPwsAshE',
   },
   wingImage1: {
+    id: 'ilseWl2',
     title: 'Ilse WL 2',
     description1:
       'Go to the right of the cave entrance where you receive Winged Light 1, and climb above the mouth of the cave.',
@@ -15,6 +17,7 @@ let wingInformation = {
     youtubeLink: 'https://www.youtube.com/embed/33lNvxzuWj8',
   },
   wingImage2: {
+    id: 'ilseWl3',
     title: 'Ilse WL 3',
     description1:
       'Go straight ahead to the ramp further away in front of the temple. The Child of Light is at the top of the ramp.',
@@ -23,6 +26,7 @@ let wingInformation = {
     youtubeLink: 'https://www.youtube.com/embed/lujlEcccQIk',
   },
   wingImage3: {
+    id: 'ilseWl4',
     title: 'Ilse WL 4',
     description1:
       'Go to the very right of the area, behind the ramp to the right. There is a cave with the next Child of Light.',
@@ -31,11 +35,12 @@ let wingInformation = {
     youtubeLink: 'https://www.youtube.com/embed/aIiJ-iYxTzc',
   },
   wingImage4: {
+    id: 'ilseWl5',
     title: 'Ilse WL 5',
     description1:
-      'ROUTE 1: Two person puzzle: Use the cloud tunnel on the right side of the Temple to reach the mountain structure. There is a two-person door blocking the main entrance to the cave. Once in with a friend release the butterflies and fly up to where your wing awaits!',
+      'ROUTE 1: Two person puzzle: When complete release the butterflies and fly up to where your wing awaits!',
     description2:
-      'ROUTE 2: Flying solo: Fly up to the upper level using the clouds to keep you charged. Once up you can reach the Child of Light through the tunnel.',
+      'ROUTE 2: Flying solo: Fly up to the upper level using the clouds to keep you charged. Once up reach the Child of Light through the tunnel.',
     youtubeLink: 'https://www.youtube.com/embed/yXrNvBOmHM8',
   },
 };
@@ -46,11 +51,11 @@ Fetches the information of the wings and returns the dynamically created HTML st
 function getCardHTML(wingTitle) {
   let wings = wingInformation[wingTitle];
   let wingCardInformation = `
-  <div class="row">
+  <div class="row" id="${wings['id']}">
     <div class="col-sm">
-        <h2 class="intro mt-5">${wings['title']}</h2>
+        <h2 class="intro mt-3">${wings['title']}</h2>
         <p class="mt-3">${wings['description1']}</p>
-        <p>${wings['description2']}</p>
+        <p class="mt-3">${wings['description2']}</p>
     </div>
     <div class="col-sm">
         <iframe width="560" height="315" src="${wings['youtubeLink']}" title="YouTube video player"
@@ -64,9 +69,16 @@ function getCardHTML(wingTitle) {
 }
 
 function handleWingClick(elementId) {
-  let cardHTML = getCardHTML(elementId);
-  let container = document.getElementById('wing-information-container');
-  container.innerHTML += cardHTML;
+  //Introduced check if element information is already on page. If present and button is clicked, it is removed.
+  let wings = wingInformation[elementId];
+  let wingElement = document.getElementById(wings.id);
+  if (wingElement === null) {
+    let cardHTML = getCardHTML(elementId);
+    let container = document.getElementById('wing-information-container');
+    container.innerHTML += cardHTML;
+  } else {
+    wingElement.remove();
+  }
 }
 
 function addImageSelector() {
@@ -96,46 +108,46 @@ window.addEventListener('load', function () {
 
 // Clock Javascript
 
-function getTimeRemaining(endtime) {
-  const total = Date.parse(endtime) - Date.parse(new Date());
-  const seconds = Math.floor((total / 1000) % 60);
-  const minutes = Math.floor((total / 1000 / 60) % 60);
-  const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-  const days = Math.floor(total / (1000 * 60 * 60 * 24));
+// function getTimeRemaining(endtime) {
+//   const total = Date.parse(endtime) - Date.parse(new Date());
+//   const seconds = Math.floor((total / 1000) % 60);
+//   const minutes = Math.floor((total / 1000 / 60) % 60);
+//   const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+//   const days = Math.floor(total / (1000 * 60 * 60 * 24));
 
-  return {
-    total,
-    days,
-    hours,
-    minutes,
-    seconds,
-  };
-}
+//   return {
+//     total,
+//     days,
+//     hours,
+//     minutes,
+//     seconds,
+//   };
+// }
 
-function initializeClock(id, endtime) {
-  const clock = document.getElementById(id);
-  const daysSpan = clock.querySelector('.days');
-  const hoursSpan = clock.querySelector('.hours');
-  const minutesSpan = clock.querySelector('.minutes');
-  const secondsSpan = clock.querySelector('.seconds');
+// function initializeClock(id, endtime) {
+//   const clock = document.getElementById(id);
+//   const daysSpan = clock.querySelector('.days');
+//   const hoursSpan = clock.querySelector('.hours');
+//   const minutesSpan = clock.querySelector('.minutes');
+//   const secondsSpan = clock.querySelector('.seconds');
 
-  function updateClock() {
-    const t = getTimeRemaining(endtime);
+//   function updateClock() {
+//     const t = getTimeRemaining(endtime);
 
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+//     daysSpan.innerHTML = t.days;
+//     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+//     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+//     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
+//     if (t.total <= 0) {
+//       clearInterval(timeinterval);
+//     }
+//   }
 
-  updateClock();
-  const timeinterval = setInterval(updateClock, 1000);
-}
+//   updateClock();
+//   const timeinterval = setInterval(updateClock, 1000);
+// }
 
-const deadline = 'April 18 2021 23:59:59 UTC -0700';
-new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);
+// const deadline = 'April 18 2021 23:59:59 UTC -0700';
+// new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+// initializeClock('clockdiv', deadline);
