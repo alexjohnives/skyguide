@@ -1,81 +1,95 @@
 /* Background Gradiant Generator Source = https://cssgradient.io/ */
 body {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      344deg,
-      rgba(255, 255, 255, 1) 31%,
-      rgb(147, 230, 255) 100%
-    );
-    height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Lato', 'Roboto', sans-serif;
-  }
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    344deg,
+    rgba(255, 255, 255, 1) 31%,
+    rgb(147, 230, 255) 100%
+  );
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Lato', 'Roboto', sans-serif;
+}
 
 /* Font Stylings */
-  h1 {
-    font-weight: bold;
-    font-size: xx-large;
-  }
+h1 {
+  font-weight: bold;
+  font-size: xx-large;
+}
 
-  p {
-    font-family: 'Roboto', sans-serif;
-    font-size: large;
-    opacity: 90%;
-  }
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  opacity: 90%;
+}
 
 /* Page Logo styling */
 
-  .logo-head {
-    width: 45vw;
-    height: auto;
-  }
+.logo-head {
+  width: 45vw;
+  height: auto;
+}
+
+.wing-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  font-size: 3.5vw;
+  color: #ffa705;
+}
 
 /* Home logo styling */
 
-  /* .home-logo {
+/* .home-logo {
     width: 55vw;
     height: auto;
   } */
 
 /* Image select funtionality styling */
 
-  .img-select {
-    display: inline-block;
-    border: 10px solid transparent;
-    border-radius: 8%;
-    margin: 0;
-    padding: 0;
-    transition-duration: 0.1s;
-    cursor: pointer;
-  }
+.img-select {
+  display: inline-block;
+  border: 10px solid transparent;
+  border-radius: 8%;
+  margin: 0;
+  padding: 0;
+  transition-duration: 0.1s;
+  cursor: pointer;
+}
 
-  .img-select:hover {
-    opacity: 70%;
-  }
-  
-  .activeimg {
-    border: 10px solid orange;
-  }
+.img-select:hover {
+  opacity: 70%;
+}
 
-  .img-rounded {
-    border-radius: 8%;
-  }
+.activeimg {
+  border: 10px solid orange;
+}
 
-  .activeimg {
-    border: 10px solid orange;
-  }
+.img-rounded {
+  border-radius: 8%;
+}
 
-  /* Footer */
-  .footer {
-    background: #ffffff;
-    opacity: 60%;
-  }
-  
-  .footer i {
-    font-size: 1.8rem;
-  }
-  
-  .footer i:hover {
-    opacity: 70%;
-  }
+.activeimg {
+  border: 10px solid orange;
+}
+
+/* Scroll down button */
+/* .btn-dark:hover {
+} */
+
+/* Clock */
+
+/* Footer */
+.footer {
+  background: #ffffff;
+  opacity: 60%;
+}
+
+.footer i {
+  font-size: 1.8rem;
+}
+
+.footer i:hover {
+  opacity: 70%;
+}
