@@ -58,7 +58,7 @@ function getCardHTML(wingTitle) {
         <p class="mt-3">${wings['description2']}</p>
     </div>
     <div class="col-sm">
-        <iframe width="560" height="315" src="${wings['youtubeLink']}" title="YouTube video player"
+        <iframe src="${wings['youtubeLink']}" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
@@ -105,49 +105,3 @@ window.addEventListener('load', function () {
 
   addImageSelector();
 });
-
-// Clock Javascript
-
-// function getTimeRemaining(endtime) {
-//   const total = Date.parse(endtime) - Date.parse(new Date());
-//   const seconds = Math.floor((total / 1000) % 60);
-//   const minutes = Math.floor((total / 1000 / 60) % 60);
-//   const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-//   const days = Math.floor(total / (1000 * 60 * 60 * 24));
-
-//   return {
-//     total,
-//     days,
-//     hours,
-//     minutes,
-//     seconds,
-//   };
-// }
-
-// function initializeClock(id, endtime) {
-//   const clock = document.getElementById(id);
-//   const daysSpan = clock.querySelector('.days');
-//   const hoursSpan = clock.querySelector('.hours');
-//   const minutesSpan = clock.querySelector('.minutes');
-//   const secondsSpan = clock.querySelector('.seconds');
-
-//   function updateClock() {
-//     const t = getTimeRemaining(endtime);
-
-//     daysSpan.innerHTML = t.days;
-//     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-//     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-//     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-//     if (t.total <= 0) {
-//       clearInterval(timeinterval);
-//     }
-//   }
-
-//   updateClock();
-//   const timeinterval = setInterval(updateClock, 1000);
-// }
-
-// const deadline = 'April 18 2021 23:59:59 UTC -0700';
-// new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-// initializeClock('clockdiv', deadline);
