@@ -50,7 +50,7 @@ let wingInformation = {
     description1: 'The Child of Light is in the first cave to the left.',
     description2:
       'You need to have found at least one Ancestor Spirit in Daylight Prairie to enter the cave.',
-    youtubeLink: 'https://youtu.be/GK3hOtc8upo',
+    youtubeLink: 'https://www.youtube.com/embed/GK3hOtc8upo',
   },
   wingImage6: {
     id: 'wingInfo7',
@@ -58,7 +58,7 @@ let wingInformation = {
     description1:
       'The Child of Light is on top of the round cave rock. The easiest way to get there is to go inside the the cave and release a call.',
     description2: 'Butterflies will come and carry you up.',
-    youtubeLink: 'https://youtu.be/6lNBP0oDbxc',
+    youtubeLink: 'https://www.youtube.com/embed/6lNBP0oDbxc',
   },
   wingImage7: {
     id: 'wingInfo8',
@@ -66,7 +66,7 @@ let wingInformation = {
     description1:
       'The Child of Light is standing by the entrance to the next area (Villages), which is straight ahead of the cloud tunnel.',
     description2: '',
-    youtubeLink: 'https://youtu.be/5_JFIBKg1oo',
+    youtubeLink: 'https://www.youtube.com/embed/5_JFIBKg1oo',
   },
   wingImage8: {
     id: 'wingInfo9',
@@ -74,7 +74,7 @@ let wingInformation = {
     description1:
       'A Child of Light stands in the center of the smaller front island in the middle',
     description2: '',
-    youtubeLink: 'https://youtu.be/2jotckYmDmI',
+    youtubeLink: 'https://www.youtube.com/embed/2jotckYmDmI',
   },
   wingImage9: {
     id: 'wingInfo10',
@@ -83,7 +83,7 @@ let wingInformation = {
       'Fly to the island to the left. Walk around to the right at the bottom of the hill to find a two player door.',
     description2:
       'Both players need to hold a candle to the door to open it and reveal the Child of Light in the cave behind it.',
-    youtubeLink: 'https://youtu.be/ZX6D51_Wais',
+    youtubeLink: 'https://www.youtube.com/embed/ZX6D51_Wais',
   },
   wingImage10: {
     id: 'wingInfo11 Villages',
@@ -99,7 +99,7 @@ let wingInformation = {
     description1:
       'When you have reached the main temple in the clouds (flying or riding a manta), fly onto the roof just above the door.',
     description2: 'The Child of Light is to the left.',
-    youtubeLink: 'https://youtu.be/ICQiPq6Si74',
+    youtubeLink: 'https://www.youtube.com/embed/ICQiPq6Si74',
   },
   wingImage12: {
     id: 'wingInfo13 Villages Temple',
@@ -107,7 +107,7 @@ let wingInformation = {
     description1:
       'Fly higher up the roof, there is another Child of Light on the dome.',
     description2: 'Jump into the clouds to recharge wing power.',
-    youtubeLink: 'https://youtu.be/KrtyiKwWxBM',
+    youtubeLink: 'https://www.youtube.com/embed/KrtyiKwWxBM',
   },
   wingImage13: {
     id: 'wingInfo14',
@@ -116,7 +116,7 @@ let wingInformation = {
       'Coming from Butterfly Fields you first get to a cave with a split lake in the middle. Go up the grassy stairs on the right until you come to a room full of jars.',
     description2:
       'Look slightly to the right out of the window and you can see the Child of Light standing in a cave high up in the wall. Fly over, ideally holding the hand of a friend.',
-    youtubeLink: 'https://youtu.be/xg6qtCPCqKc',
+    youtubeLink: 'https://www.youtube.com/embed/xg6qtCPCqKc',
   },
   wingImage14: {
     id: 'wingInfo15',
@@ -125,7 +125,7 @@ let wingInformation = {
       'Opposite the entrance coming from Butterfly Fields, across the lake there is a narrower cave area that has light shining from the top.',
     description2:
       'The Child of Light is standing in a small cave high up to the right.',
-    youtubeLink: 'https://youtu.be/YNF4Vf9KO9w',
+    youtubeLink: 'https://www.youtube.com/embed/YNF4Vf9KO9w',
   },
   wingImage15: {
     id: 'wingInfo16',
@@ -133,7 +133,7 @@ let wingInformation = {
     description1:
       'This Winged Light is located on a higher island on the perimeter of the area, between the Villages gateway and the Sanctuary Islands entrance.',
     description2: '',
-    youtubeLink: 'https://youtu.be/9H6hjJI8XGE',
+    youtubeLink: 'https://www.youtube.com/embed/9H6hjJI8XGE',
   },
   wingImage16: {
     id: 'wingInfo17',
@@ -141,7 +141,7 @@ let wingInformation = {
     description1:
       'This Winged Light is on a small island directly below the gateway between Bird Nest and Villages.',
     description2: '',
-    youtubeLink: 'https://youtu.be/7E-4TK_-Wh0',
+    youtubeLink: 'https://www.youtube.com/embed/7E-4TK_-Wh0',
   },
   wingImage13: {
     id: 'wingInfo18',
@@ -158,7 +158,7 @@ let wingInformation = {
     description1:
       'Hidden near the apex of the central island, this winged light is also visible as you fly down.',
     description2: '',
-    youtubeLink: 'https://youtu.be/N4pVEyYKnks',
+    youtubeLink: 'https://www.youtube.com/embed/N4pVEyYKnks',
   },
   wingImage15: {
     id: 'wingInfo20',
@@ -166,7 +166,7 @@ let wingInformation = {
     description1:
       'This Winged light is easily visible when visiting the island’s ancestor spirit.',
     description2: 'Look over the adjacent cliff face and you will see it.',
-    youtubeLink: 'https://youtu.be/X_KxYDlqcYA',
+    youtubeLink: 'https://www.youtube.com/embed/X_KxYDlqcYA',
   },
   wingImage16: {
     id: 'wingInfo21',
@@ -175,7 +175,7 @@ let wingInformation = {
       'Stand next to the ancestor spirit facing the same direction and fly down off the cliff edge to the cave below.',
     description2:
       'At the far side you will find the winged light at the back of the cave.',
-    youtubeLink: 'https://youtu.be/Z7-XS4VA4QM',
+    youtubeLink: 'https://www.youtube.com/embed/Z7-XS4VA4QM',
   },
   wingImage17: {
     id: 'wingInfo21',
@@ -183,7 +183,7 @@ let wingInformation = {
     description1:
       'Follow the waterfall down on the main island from the highest pool.',
     description2: 'This light is hidden behind the flow on the lowest level.',
-    youtubeLink: 'https://youtu.be/Pq6XytIrbZQ',
+    youtubeLink: 'https://www.youtube.com/embed/Pq6XytIrbZQ',
   },
   wingImage18: {
     id: 'wingInfo22',
@@ -192,7 +192,7 @@ let wingInformation = {
       'Facing away from the waterfall at its base, go left and enter the cave.',
     description2:
       'Follow a winding path upwards and being careful of the crabby crabs, you will find the winged light.',
-    youtubeLink: 'https://youtu.be/jUZ8xmeqatk',
+    youtubeLink: 'https://www.youtube.com/embed/jUZ8xmeqatk',
   },
   wingImage19: {
     id: 'wingInfo23',
@@ -200,7 +200,7 @@ let wingInformation = {
     description1:
       'Returning to face the waterfall, there is a cave with ladder structure to the left.',
     description2: 'The winged light is on the highest horizontal ladder.',
-    youtubeLink: 'https://youtu.be/jAQk4EWryao',
+    youtubeLink: 'https://www.youtube.com/embed/jAQk4EWryao',
   },
   wingImage20: {
     id: 'wingInfo24',
@@ -209,7 +209,7 @@ let wingInformation = {
       'This winged light is on one of the furthest satellite floating islands. You will need a friend or some height to reach it.',
     description2:
       'You can also use the clouds as you fly down from the area entrance.',
-    youtubeLink: 'https://youtu.be/JGWi8I-FXbw',
+    youtubeLink: 'https://www.youtube.com/embed/JGWi8I-FXbw',
   },
   wingImage21: {
     id: 'wingInfo25',
@@ -218,7 +218,7 @@ let wingInformation = {
       'The Child of Light here is in a visible cave at the left-hand tree.',
     description2:
       'Fly up the trunk and the Child of Light will be in front of you.',
-    youtubeLink: 'https://youtu.be/Pq6XytIrbZQ',
+    youtubeLink: 'https://www.youtube.com/embed/Pq6XytIrbZQ',
   },
 };
 
