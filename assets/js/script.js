@@ -87,7 +87,7 @@ let wingInformation = {
   },
   wingImage10: {
     id: 'wingInfo11 Villages',
-    title: 'Prairie WL 6',
+    title: 'Prairie WL 6 Villages',
     description1:
       'Fly to the middle of the three bigger islands and walk around the back of the hill to find a Child of Light.',
     description2: '',
@@ -95,7 +95,7 @@ let wingInformation = {
   },
   wingImage11: {
     id: 'wingInfo12 Villages Temple',
-    title: 'Prairie WL 6',
+    title: 'Prairie WL 6 Villages',
     description1:
       'When you have reached the main temple in the clouds (flying or riding a manta), fly onto the roof just above the door.',
     description2: 'The Child of Light is to the left.',
@@ -103,7 +103,7 @@ let wingInformation = {
   },
   wingImage12: {
     id: 'wingInfo13 Villages Temple',
-    title: 'Prairie WL 7',
+    title: 'Prairie WL 7 Villages',
     description1:
       'Fly higher up the roof, there is another Child of Light on the dome.',
     description2: 'Jump into the clouds to recharge wing power.',
