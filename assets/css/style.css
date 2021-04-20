@@ -27,15 +27,19 @@ p {
 /* Page Logo styling */
 
 .logo-head {
-  width: 45vw;
+  width: 50vw;
   height: auto;
 }
 
 .wing-title {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: x-large;
   font-size: 3.5vw;
+  color: #ffa705;
+}
+
+.contact-field {
+  font-family: 'Lato', sans-serif;
   color: #ffa705;
 }
 
@@ -63,7 +67,7 @@ p {
 }
 
 .activeimg {
-  border: 10px solid orange;
+  border: 10px solid #ffa705;
 }
 
 .img-rounded {
@@ -71,7 +75,7 @@ p {
 }
 
 .activeimg {
-  border: 10px solid orange;
+  border: 10px solid #ffa705;
 }
 
 /* Scroll down button */
