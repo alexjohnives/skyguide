@@ -88,23 +88,30 @@
   <section id="contact-form">
     <div class="container">
       <form id="form">
-        <div class="field row mb-3">
-          <label for="from_name" class="wing-title">Name</label>
-          <input type="text" name="from_name" id="from_name" placeholder="Your name" required />
-        </div>
-        <div class="field row mb-3">
-          <label for="user_email" class="wing-title">Email</label>
-          <input type="text" name="user_email" id="user_email" placeholder="Your email" required />
-          <div id="emailHelp" class="form-text">
-            We'll never share your email with anyone else.
+        <div class="row mb-3">
+          <div class="col-sml">
+            <label for="from_name" class="form-label wing-title">Name</label>
+            <input type="text" class="form-control" name="from_name" id="from_name" placeholder="Your name" required />
           </div>
         </div>
-        <div class="field row mb-3">
-          <label for="message" class="wing-title">Message</label>
-          <textarea type="text" name="message" id="message" rows="5" placeholder="Please write your message"
-            required></textarea>
+        <div class="row mb-3">
+          <div class="col-sml">
+            <label for="user_email" class="form-label wing-title">Email</label>
+            <input type="text" class="form-control" name="user_email" id="user_email" placeholder="Your email"
+              required />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
         </div>
-        <div class="d-grid gap-2 col-2 mx-auto mt-3">
+        <div class="row mb-3">
+          <div class="col-sml">
+            <label for="message" class="form-label wing-title">Message</label>
+            <textarea type="text" class="form-control" name="message" id="message" rows="5"
+              placeholder="Please write your message" required></textarea>
+          </div>
+        </div>
+        <div class="d-grid gap-2 col-2 mx-auto mt-5">
           <input type="submit" id="button" class="btn btn-outline-success" value="Send Email" />
         </div>
       </form>
