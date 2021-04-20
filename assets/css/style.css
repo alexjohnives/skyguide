@@ -1,46 +1,46 @@
 /* Background Gradiant Generator Source = https://cssgradient.io/ */
 body {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    344deg,
-    rgba(255, 255, 255, 1) 31%,
-    rgb(147, 230, 255) 100%
-  );
-  height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Lato', 'Roboto', sans-serif;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        344deg,
+        rgba(255, 255, 255, 1) 31%,
+        rgb(147, 230, 255) 100%
+    );
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Lato', 'Roboto', sans-serif;
 }
 
 /* Font Stylings */
 h1 {
-  font-weight: bold;
-  font-size: xx-large;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
-  font-size: large;
-  opacity: 90%;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    opacity: 90%;
 }
 
 /* Page Logo styling */
 
 .logo-head {
-  width: 50vw;
-  height: auto;
+    width: 50vw;
+    height: auto;
 }
 
 .wing-title {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  font-size: 3.5vw;
-  color: #ffa705;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 3.5vw;
+    color: #ffa705;
 }
 
 .contact-field {
-  font-family: 'Lato', sans-serif;
-  color: #ffa705;
+    font-family: 'Lato', sans-serif;
+    color: #ffa705;
 }
 
 /* Home logo styling */
@@ -53,29 +53,29 @@ p {
 /* Image select funtionality styling */
 
 .img-select {
-  display: inline-block;
-  border: 10px solid transparent;
-  border-radius: 8%;
-  margin: 0;
-  padding: 0;
-  transition-duration: 0.1s;
-  cursor: pointer;
+    display: inline-block;
+    border: 10px solid transparent;
+    border-radius: 8%;
+    margin: 0;
+    padding: 0;
+    transition-duration: 0.1s;
+    cursor: pointer;
 }
 
 .img-select:hover {
-  opacity: 70%;
+    opacity: 70%;
 }
 
 .activeimg {
-  border: 10px solid #ffa705;
+    border: 10px solid #ffa705;
 }
 
 .img-rounded {
-  border-radius: 8%;
+    border-radius: 8%;
 }
 
 .activeimg {
-  border: 10px solid #ffa705;
+    border: 10px solid #ffa705;
 }
 
 /* Scroll down button */
@@ -84,16 +84,37 @@ p {
 
 /* Clock */
 
+/* Scroll to top icon */
+#scroll {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    font-size: 2em;
+    opacity: 1;
+    color: #ff00bb;
+}
+
+#scroll:hover {
+    opacity: 1;
+    transition-property: color;
+    transition-duration: 0.5s;
+    color: #ffb300;
+}
+
 /* Footer */
 .footer {
-  background: #ffffff;
-  opacity: 60%;
+    background: #ffffff;
+    opacity: 60%;
 }
 
 .footer i {
-  font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 
 .footer i:hover {
-  opacity: 70%;
+    opacity: 70%;
 }
