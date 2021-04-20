@@ -95,7 +95,7 @@ let wingInformation = {
   },
   wingImage11: {
     id: 'wingInfo12 Villages Temple',
-    title: 'Prairie WL 6 Villages',
+    title: 'Prairie WL 7 Villages',
     description1:
       'When you have reached the main temple in the clouds (flying or riding a manta), fly onto the roof just above the door.',
     description2: 'The Child of Light is to the left.',
@@ -103,7 +103,7 @@ let wingInformation = {
   },
   wingImage12: {
     id: 'wingInfo13 Villages Temple',
-    title: 'Prairie WL 7 Villages',
+    title: 'Prairie WL 8 Villages',
     description1:
       'Fly higher up the roof, there is another Child of Light on the dome.',
     description2: 'Jump into the clouds to recharge wing power.',
@@ -111,7 +111,7 @@ let wingInformation = {
   },
   wingImage13: {
     id: 'wingInfo14',
-    title: 'Prairie WL 8 Caves',
+    title: 'Prairie WL 9 Caves',
     description1:
       'Coming from Butterfly Fields you first get to a cave with a split lake in the middle. Go up the grassy stairs on the right until you come to a room full of jars.',
     description2:
@@ -120,7 +120,7 @@ let wingInformation = {
   },
   wingImage14: {
     id: 'wingInfo15',
-    title: 'Prairie WL 9 Caves',
+    title: 'Prairie WL 10 Caves',
     description1:
       'Opposite the entrance coming from Butterfly Fields, across the lake there is a narrower cave area that has light shining from the top.',
     description2:
@@ -129,7 +129,7 @@ let wingInformation = {
   },
   wingImage15: {
     id: 'wingInfo16',
-    title: 'Prairie WL 10 Bird Nest',
+    title: 'Prairie WL 11 Bird Nest',
     description1:
       'This Winged Light is located on a higher island on the perimeter of the area, between the Villages gateway and the Sanctuary Islands entrance.',
     description2: '',
@@ -137,88 +137,88 @@ let wingInformation = {
   },
   wingImage16: {
     id: 'wingInfo17',
-    title: 'Prairie WL 11 Bird Nest',
+    title: 'Prairie WL 12 Bird Nest',
     description1:
       'This Winged Light is on a small island directly below the gateway between Bird Nest and Villages.',
     description2: '',
     youtubeLink: 'https://www.youtube.com/embed/7E-4TK_-Wh0',
   },
-  wingImage13: {
+  wingImage17: {
     id: 'wingInfo18',
-    title: 'Prairie WL 12 Sanctuary islands',
+    title: 'Prairie WL 13 Sanctuary islands',
     description1:
       'This is visible after you enter the Sanctuary islands area. You have to fly down and then will see the light glistening.',
     description2:
       'It is located on the central floating island with a waterfall.',
     youtubeLink: '',
   },
-  wingImage14: {
+  wingImage18: {
     id: 'wingInfo19',
-    title: 'Prairie WL 13 Sanctuary islands',
+    title: 'Prairie WL 14 Sanctuary islands',
     description1:
       'Hidden near the apex of the central island, this winged light is also visible as you fly down.',
     description2: '',
     youtubeLink: 'https://www.youtube.com/embed/N4pVEyYKnks',
   },
-  wingImage15: {
+  wingImage19: {
     id: 'wingInfo20',
-    title: 'Prairie WL 14 Sanctuary islands',
+    title: 'Prairie WL 15 Sanctuary islands',
     description1:
       'This Winged light is easily visible when visiting the island’s ancestor spirit.',
     description2: 'Look over the adjacent cliff face and you will see it.',
     youtubeLink: 'https://www.youtube.com/embed/X_KxYDlqcYA',
   },
-  wingImage16: {
+  wingImage20: {
     id: 'wingInfo21',
-    title: 'Prairie WL 15 Sanctuary islands',
+    title: 'Prairie WL 16 Sanctuary islands',
     description1:
       'Stand next to the ancestor spirit facing the same direction and fly down off the cliff edge to the cave below.',
     description2:
       'At the far side you will find the winged light at the back of the cave.',
     youtubeLink: 'https://www.youtube.com/embed/Z7-XS4VA4QM',
   },
-  wingImage17: {
-    id: 'wingInfo21',
-    title: 'Prairie WL 16 Sanctuary islands',
+  wingImage21: {
+    id: 'wingInfo22',
+    title: 'Prairie WL 17 Sanctuary islands',
     description1:
       'Follow the waterfall down on the main island from the highest pool.',
     description2: 'This light is hidden behind the flow on the lowest level.',
     youtubeLink: 'https://www.youtube.com/embed/Pq6XytIrbZQ',
   },
-  wingImage18: {
-    id: 'wingInfo22',
-    title: 'Prairie WL 17 Sanctuary islands',
+  wingImage22: {
+    id: 'wingInfo23',
+    title: 'Prairie WL 18 Sanctuary islands',
     description1:
       'Facing away from the waterfall at its base, go left and enter the cave.',
     description2:
       'Follow a winding path upwards and being careful of the crabby crabs, you will find the winged light.',
     youtubeLink: 'https://www.youtube.com/embed/jUZ8xmeqatk',
   },
-  wingImage19: {
-    id: 'wingInfo23',
-    title: 'Prairie WL 18 Sanctuary islands',
+  wingImage23: {
+    id: 'wingInfo24',
+    title: 'Prairie WL 19 Sanctuary islands',
     description1:
       'Returning to face the waterfall, there is a cave with ladder structure to the left.',
     description2: 'The winged light is on the highest horizontal ladder.',
     youtubeLink: 'https://www.youtube.com/embed/jAQk4EWryao',
   },
-  wingImage20: {
-    id: 'wingInfo24',
-    title: 'Prairie WL 19 Sanctuary islands',
+  wingImage24: {
+    id: 'wingInfo25',
+    title: 'Prairie WL 20 Sanctuary islands',
     description1:
       'This winged light is on one of the furthest satellite floating islands. You will need a friend or some height to reach it.',
     description2:
       'You can also use the clouds as you fly down from the area entrance.',
     youtubeLink: 'https://www.youtube.com/embed/JGWi8I-FXbw',
   },
-  wingImage21: {
-    id: 'wingInfo25',
-    title: 'Prairie WL 20 Eight Player Area',
+  wingImage25: {
+    id: 'wingInfo26',
+    title: 'Prairie WL 21 Eight Player Area',
     description1:
       'The Child of Light here is in a visible cave at the left-hand tree.',
     description2:
       'Fly up the trunk and the Child of Light will be in front of you.',
-    youtubeLink: 'https://www.youtube.com/embed/Pq6XytIrbZQ',
+    youtubeLink: 'https://www.youtube.com/embed/QxAqH35TzlA',
   },
 };
 
