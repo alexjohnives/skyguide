@@ -91,7 +91,7 @@ const wingInformation = {
         description1:
             'Fly to the middle of the three bigger islands and walk around the back of the hill to find a Child of Light.',
         description2: '',
-        youtubeLink: '',
+        youtubeLink: 'https://www.youtube.com/embed/pDc-HhWL50s',
     },
     wingImage11: {
         id: 'wingInfo12 Villages Temple',
