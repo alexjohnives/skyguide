@@ -6,8 +6,8 @@ function getCardHTML(wingTitle) {
     let wingCardInformation = `
   <div class="row" id="${wings['id']}">
     <div class="col-sm">
-        <h2 class="wing-title mt-5">${wings['title']}</h2>
-        <p class="mt-5">${wings['description1']}</p>
+        <h2 class="wing-title mt-3">${wings['title']}</h2>
+        <p class="mt-3">${wings['description1']}</p>
         <p class="mt-3">${wings['description2']}</p>
     </div>
     <div class="col-sm mb-5">
