@@ -6,11 +6,11 @@ function getCardHTML(wingTitle) {
     let wingCardInformation = `
   <div class="row" id="${wings['id']}">
     <div class="col-sm">
-        <h2 class="wing-title mt-3">${wings['title']}</h2>
-        <p class="mt-3">${wings['description1']}</p>
+        <h2 class="wing-title mt-5">${wings['title']}</h2>
+        <p class="mt-5">${wings['description1']}</p>
         <p class="mt-3">${wings['description2']}</p>
     </div>
-    <div class="col-sm">
+    <div class="col-sm mb-5">
         <iframe width="560" height="315" src="${wings['youtubeLink']}" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -22,7 +22,7 @@ function getCardHTML(wingTitle) {
 }
 
 function handleWingClick(elementId) {
-    //Introduced check if element information is already on page. If present and button is clicked, it is removed.
+    //Check if element information is already on page. If present and button is clicked, it is removed.
     let wings = wingInformation[elementId];
     let wingElement = document.getElementById(wings.id);
     if (wingElement === null) {
@@ -34,10 +34,11 @@ function handleWingClick(elementId) {
     }
 }
 
+// This function targets images with the .img-select class
 function addImageSelector() {
     const imgSelected = document.querySelectorAll('.img-select');
 
-    // go through each image and activate it by adding a class
+    // It iterates through each image and activates it by adding a class
     imgSelected.forEach((imgSelect) => {
         imgSelect.addEventListener('click', () => {
             imgSelect.classList.toggle('activeimg');
@@ -45,11 +46,8 @@ function addImageSelector() {
     });
 }
 
+// This code ensures that the click function is applied to all the .wing-click-event-class elements after the window has fully loaded.
 window.addEventListener('load', function () {
-    // document.getElementById('praireImage0').addEventListener('click', function (e) {
-    //   handlePraireClick('praireImage0');
-    // })
-
     document.querySelectorAll('.wing-click-event-class').forEach((item) => {
         item.addEventListener('click', function (e) {
             handleWingClick(e.target.getAttribute('id'));
