@@ -6,7 +6,7 @@
 
 An interactive memory aid to collecting winged lights in Sky: Children of the light
 
-![Website shown on different display sizes]()
+![Website shown on different display sizes](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skyguideresponse.png)
 
 ## Introduction
 
