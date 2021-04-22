@@ -1,14 +1,14 @@
 /*Javascript UTC - 7 hour countdown clock
  Javascript repeating countdown clock code modified from source https://vincoding.com/weekly-repeating-countdown-timer-javascript/*/
 
-var curday;
-var secTime;
-var ticker;
+let curday;
+let secTime;
+let ticker;
 
 function getSeconds() {
-    var nowDate = new Date();
-    var dy = 0; //Sunday through Saturday defined as 0 to 6
-    var countertime = new Date(
+    let nowDate = new Date();
+    let dy = 0; //Sunday through Saturday defined as 0 to 6
+    let countertime = new Date(
         Date.UTC(
             nowDate.getUTCFullYear(),
             nowDate.getUTCMonth(),
@@ -19,9 +19,9 @@ function getSeconds() {
         )
     ); //7 out of 24 hours = 0700, the equivalent weekly reset time in UTC.
 
-    var curtime = nowDate.getTime(); //current time
-    var atime = countertime.getTime(); //countdown time
-    var diff = parseInt((atime - curtime) / 1000);
+    let curtime = nowDate.getTime(); //current time
+    let atime = countertime.getTime(); //countdown time
+    let diff = parseInt((atime - curtime) / 1000);
     if (diff > 0) {
         curday = dy - nowDate.getDay();
     } else {
@@ -43,7 +43,7 @@ function startTimer(secs) {
 }
 
 function tick() {
-    var secs = secTime;
+    let secs = secTime;
     if (secs > 0) {
         secTime--;
     } else {
@@ -51,11 +51,11 @@ function tick() {
         getSeconds(); //start over
     }
 
-    var days = Math.floor(secs / 86400);
+    let days = Math.floor(secs / 86400);
     secs %= 86400;
-    var hours = Math.floor(secs / 3600);
+    let hours = Math.floor(secs / 3600);
     secs %= 3600;
-    var mins = Math.floor(secs / 60);
+    let mins = Math.floor(secs / 60);
     secs %= 60;
 
     //update the time display
