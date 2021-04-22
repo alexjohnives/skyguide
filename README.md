@@ -8,6 +8,9 @@ An interactive memory aid to collecting winged lights in Sky: Children of the li
 
 ![Website shown on different display sizes](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skyguideresponse.png)
 
+Table of Contents
+======
+
 ## Introduction
 
 I was a beta tester for this MMO (Massively Mulitplayer Online Game) in 2019. Having not played since it launched that same year, I revisited a couple of months ago to see how it had progressed. I discovered it had become incredibly popular with over 50 million downloads, a huge international online community and a significantly expanded virtual world to explore.
@@ -74,11 +77,11 @@ Perhaps because of this combined with the source material, I immediately had a c
 
 I modifyed the logo with the additon of the word 'guide' in a warm orange, which I took inspiration for from my game avatar's kimono cape.
 
-![Skyguide wireframe 1](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wireframe1.png)
+![Skyguide wireframe 1](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wireframe1.jpg)
 
 Together with the blue to white gradiant for the background to reflect a blue sky, I felt the wireframes immediatly achieved a design foundation I was satisfied with.
 
-![Skyguide wireframe 2](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wireframe2.png)
+![Skyguide wireframe 2](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wireframe2.jpg)
 
 From the outset I decided I wanted to use a HTML/ CSS responsive framework. I explored [Materialize](https://materializecss.com/) but settled on Bootstrap 5 instead as I am already familiar with the framework from my first project.
 
