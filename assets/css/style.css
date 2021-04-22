@@ -93,3 +93,39 @@ p {
     transition-duration: 0.5s;
     color: #ffb300;
 }
+
+
+/* Eden Clock Stylings
+CSS styling modified from source https://vincoding.com/weekly-repeating-countdown-timer-javascript/*/
+*/
+ 
+#countholder a{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+ #countholder{
+ font-family: sans-serif;
+ color: #fff;
+ display: inline-block;
+ font-weight: 100;
+ text-align: center;
+ font-size: 48px;
+ border-radius: 10px;
+} 
+ 
+#countholder > div{
+ background:#e01a03;
+ display: inline-block;
+}
+ 
+#countholder div > span{
+ border-radius: 0px;
+ background:#e01a03;
+ display: inline-block;
+}
+ 
+#countholder .smalltext{
+ font-size: 16px;
+}
