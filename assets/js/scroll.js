@@ -3,7 +3,7 @@
 //Code modified from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
 //Get the button:
-mybutton = document.getElementById('scroll');
+scrollbutton = document.getElementById('scroll');
 
 // When the user scrolls down 20px from the top of the document, the button is displayed
 window.onscroll = function () {
@@ -15,9 +15,9 @@ function scrollFunction() {
         document.body.scrollTop > 20 ||
         document.documentElement.scrollTop > 20
     ) {
-        mybutton.style.display = 'block';
+        scrollbutton.style.display = 'block';
     } else {
-        mybutton.style.display = 'none';
+        scrollbutton.style.display = 'none';
     }
 }
 
