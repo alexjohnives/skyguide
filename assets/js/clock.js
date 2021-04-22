@@ -1,45 +1,69 @@
-// Clock Javascript
+/*Javascript UTC - 7 hour countdown clock
+ Javascript repeating countdown clock code modified from source https://vincoding.com/weekly-repeating-countdown-timer-javascript/*/
 
-function getTimeRemaining(endtime) {
-    const total = Date.parse(endtime) - Date.parse(new Date());
-    const seconds = Math.floor((total / 1000) % 60);
-    const minutes = Math.floor((total / 1000 / 60) % 60);
-    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-    const days = Math.floor(total / (1000 * 60 * 60 * 24));
+var curday;
+var secTime;
+var ticker;
 
-    return {
-        total,
-        days,
-        hours,
-        minutes,
-        seconds,
-    };
+function getSeconds() {
+    var nowDate = new Date();
+    var dy = 0; //Sunday through Saturday defined as 0 to 6
+    var countertime = new Date(
+        Date.UTC(
+            nowDate.getUTCFullYear(),
+            nowDate.getUTCMonth(),
+            nowDate.getUTCDate(),
+            7,
+            0,
+            0
+        )
+    ); //7 out of 24 hours = 0700, the equivalent weekly reset time in UTC.
+
+    var curtime = nowDate.getTime(); //current time
+    var atime = countertime.getTime(); //countdown time
+    var diff = parseInt((atime - curtime) / 1000);
+    if (diff > 0) {
+        curday = dy - nowDate.getDay();
+    } else {
+        curday = dy - nowDate.getDay() - 1;
+    } //after countdown time
+    if (curday < 0) {
+        curday += 7;
+    } //already after countdown time, switch to next week
+    if (diff <= 0) {
+        diff += 86400 * 7;
+    }
+    startTimer(diff);
 }
 
-function initializeClock(id, endtime) {
-    const clock = document.getElementById(id);
-    const daysSpan = clock.querySelector('.days');
-    const hoursSpan = clock.querySelector('.hours');
-    const minutesSpan = clock.querySelector('.minutes');
-    const secondsSpan = clock.querySelector('.seconds');
+function startTimer(secs) {
+    secTime = parseInt(secs);
+    ticker = setInterval('tick()', 1000);
+    tick(); //initial count display
+}
 
-    function updateClock() {
-        const t = getTimeRemaining(endtime);
-
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-        if (t.total <= 0) {
-            clearInterval(timeinterval);
-        }
+function tick() {
+    var secs = secTime;
+    if (secs > 0) {
+        secTime--;
+    } else {
+        clearInterval(ticker);
+        getSeconds(); //start over
     }
 
-    updateClock();
-    const timeinterval = setInterval(updateClock, 1000);
-}
+    var days = Math.floor(secs / 86400);
+    secs %= 86400;
+    var hours = Math.floor(secs / 3600);
+    secs %= 3600;
+    var mins = Math.floor(secs / 60);
+    secs %= 60;
 
-const deadline = 'April 25 2021 23:59:59 UTC -0700';
-new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);
+    //update the time display
+    document.getElementById('days').innerHTML = curday;
+    document.getElementById('hours').innerHTML =
+        (hours < 10 ? '0' : '') + hours;
+    document.getElementById('minutes').innerHTML =
+        (mins < 10 ? '0' : '') + mins;
+    document.getElementById('seconds').innerHTML =
+        (secs < 10 ? '0' : '') + secs;
+}
