@@ -1,3 +1,5 @@
+//Defines the const variable wingInformation which is called from the getCardHTML function in script.js
+
 const wingInformation = {
     wingImage0: {
         id: 'wingInfo1',
