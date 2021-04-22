@@ -19,12 +19,12 @@ h1 {
 }
 
 h2 {
-    opacity: 78%;
+    opacity: 68%;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    opacity: 78%;
+    opacity: 68%;
     font-size: x-large;
 }
 
@@ -105,7 +105,6 @@ CSS styling modified from source https://vincoding.com/weekly-repeating-countdow
 #countholder a{
   display: inline-block;
   color: #fff;
-  text-decoration: none;
 }
 
  #countholder{
@@ -119,11 +118,6 @@ CSS styling modified from source https://vincoding.com/weekly-repeating-countdow
 } 
  
 #countholder > div{
- background:#e01a03;
- display: inline-block;
-}
- 
-#countholder div > span{
  background:#e01a03;
  display: inline-block;
 }
