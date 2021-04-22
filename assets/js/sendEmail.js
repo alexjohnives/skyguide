@@ -1,7 +1,7 @@
 // Email JS
 
 // Button, serviceID and templateID linked to Email JS functionality
-const btn = document.getElementById('button');
+const btn = document.getElementById('sendbutton');
 const serviceID = 'default_service';
 const templateID = 'skyguide contact';
 
