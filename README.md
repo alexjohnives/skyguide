@@ -74,17 +74,19 @@ Perhaps because of this combined with the source material, I immediately had a c
 
 I modifyed the logo with the additon of the word 'guide' in a warm orange, which I took inspiration for from my game avatar's kimono cape.
 
+![Skyguide wireframe 1](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wireframe1.png)
+
 Together with the blue to white gradiant for the background to reflect a blue sky, I felt the wireframes immediatly achieved a design foundation I was satisfied with.
 
-![Skyguide draft website design 1](https://github.com/)
+![Skyguide wireframe 2](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wireframe2.png)
 
-From the outset I decided I wanted to use a HTML/ CSS responsive framework. I explored [Materialize](https://materializecss.com/) but settled on Bootstrap 5 instead as I am already familiar with its use from my first project.
+From the outset I decided I wanted to use a HTML/ CSS responsive framework. I explored [Materialize](https://materializecss.com/) but settled on Bootstrap 5 instead as I am already familiar with the framework from my first project.
 
 ### Colors
 
-I therefore decided on keeping my design clean and concise. Rather than importing my background gradient from Procreate, I found an online tool [CSS Gradient](https://cssgradient.io/) to create the background.
+I decided on keeping my design clean and concise. Rather than importing my background gradient from Procreate, I found an online tool [CSS Gradient](https://cssgradient.io/) to create the background.
 
-For the other colours of the website I referred to the game and used the Google extension [Eye Dropper](https://eyedropper.org/) to take colour references. I then modified these in Procreate and approached the colour styings for this project using my own judgment.
+For the other colours of the website I referred to the game and used the Google extension [Eye Dropper](https://eyedropper.org/) to take colour references. I then modified these in Procreate and approached the colour styings for this project using my own judgment. These can be seen in the area logos I created to add a more personal element to the site.
 
 ### Typography
 
@@ -98,7 +100,7 @@ Utilising bootstrap in the creation of this site I used their newly released Boo
 
 With a couple of exceptions, all the images and movie elements utilised in this project were taken by me using the in game photo and film capture options.
 
-The winged art image on the front page was created by PlagueDoctor Jed who gave permission for its use in this site.
+The winged art image on the front page was created by PlagueDoctorJed who gave permission for its use in this site.
 
 ## Languages Used
 
