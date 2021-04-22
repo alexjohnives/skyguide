@@ -18,10 +18,14 @@ h1 {
     font-size: xx-large;
 }
 
+h2 {
+    opacity: 78%;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: large;
-    opacity: 90%;
+    opacity: 78%;
+    font-size: x-large;
 }
 
 /* Page Logo styling */
@@ -36,8 +40,7 @@ p {
 .wing-title {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    font-size: 3.5vw;
-    color: #ffa705;
+    color: #ffb005;
 }
 
 .contact-field {
@@ -121,7 +124,6 @@ CSS styling modified from source https://vincoding.com/weekly-repeating-countdow
 }
  
 #countholder div > span{
- border-radius: 0px;
  background:#e01a03;
  display: inline-block;
 }
