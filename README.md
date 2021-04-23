@@ -9,10 +9,10 @@ An interactive memory aid to collecting winged lights in Sky: Children of the li
 ![Website shown on different display sizes](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skyguideresponse.png)
 
 # Table of contents
-
+- [Table of contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Project goals](#project-goals)
-- [User Experience (UX)](#user-experience)
+- [User Experience](#user-experience)
   * [First Time User](#first-time-user)
   * [Returning User requirements and expectations](#returning-user-requirements-and-expectations)
 - [Design](#design)
@@ -20,9 +20,16 @@ An interactive memory aid to collecting winged lights in Sky: Children of the li
   * [Typography](#typography)
   * [Icons](#icons)
   * [Images and Photo Media](#images-and-photo-media)
+  * [Other resources](#other-resources)
   * [Languages Used](#languages-used)
   * [Tools, Frameworks, Libraries and Programs used](#tools--frameworks--libraries-and-programs-used)
-- [Testing User Stories (UX)](#testing-user-stories-from--ux--section)
+- [Skyguide Javascript Code Development](#skyguide-javascript-code-development)
+  * [Step 1: Skytest Toggle Display.](#step-1--skytest-toggle-display)
+  * [Step 2: Skyguide](#step-2--skyguide)
+  * [Step 3: Email JS](#step-3--email-js)
+  * [Step 4: Scroll](#step-4--scroll)
+  * [Step 5: Eden clock](#step-5--eden-clock)
+- [Testing User Stories from (UX) section](#testing-user-stories-from--ux--section)
   * [Revisiting first time User goals](#revisiting-first-time-user-goals)
   * [Revisiting returning User goals](#revisiting-returning-user-goals)
 - [Testing](#testing)
@@ -32,6 +39,7 @@ An interactive memory aid to collecting winged lights in Sky: Children of the li
   * [CSS Testing](#css-testing)
     + [CSS Test Errors](#css-test-errors)
     + [CSS Test Error Fixes](#css-test-error-fixes)
+  * [Javascript Testing](#javascript-testing)
   * [Accessibility Testing](#accessibility-testing)
   * [Accessibility Testing results - WAVE](#accessibility-testing-results---wave)
     + [WAVE Errors](#wave-errors)
@@ -50,8 +58,7 @@ An interactive memory aid to collecting winged lights in Sky: Children of the li
     + [Forking the GitHub Repository](#forking-the-github-repository)
     + [Making a Local Clone](#making-a-local-clone)
     + [Github Pages](#github-pages)
-- [Credits](#credits)
-- [Code](#code)
+- [Code acknowledgments](#code-acknowledgments)
 - [Media](#media)
 - [Acknowledgements](#acknowledgements)
 
@@ -188,47 +195,64 @@ Javascript
 
 [Apple Preview](https://support.apple.com/en-gb/guide/preview/welcome/mac) Was used for the occastional photo edit
 
-# Project Javascript Code Development
+# Skyguide Javascript Code Development
 
-## Step 1: Show and Hide
+## Step 1: Skytest Toggle Display.
 
 I have found the leap from using HTML and CSS to incorporating Javascript very challenging. While considering what project I wanted to create, I decided to focus on creating an interactive website of my own design.
 
 Unsure about how but working through what I wanted to achieve, I built a practice website Skytest.
 
-The method I came up with to achieve the click and display information aspect of the site, was based on showing and hiding HTML div elements.
+The method I came up with to achieve the click and display information aspect of the site, was based on showing and hiding HTML div elements. This was inspired by an website design tutorial by Brad Traversy [Traversy Media](https://www.traversymedia.com/) on [Udemy](https://www.udemy.com/) I followed where he uses a simple Javascript to expand on click picture elements on a webpage.
 
-![Skytest2](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skytestHTML.png)
+After watching this, I found the approach I desired here [W3schools - how to toggle and hide/ show](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp)
 
-'''
-window.addEventListener('load', (event) => {
-  
-  addImageSelector();
+From this exapmle I expanded the code to what you see below.
 
-});
+![Skytest JS](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skytestJS.png)
 
-function addImageSelector() {
-  const imgSelected = document.querySelectorAll('.img-select');
+In this code, which I began with at the outset of Skyguide, a click select class was added to all images with the class of img-select, via function addImageSelector.
 
-imgSelected.forEach((imgSelect) => {
-  imgSelect.addEventListener('click', () => {
-    imgSelect.classList.toggle('activeimg');
-  });
-});
-}
+For each image then, the toggle active class was applied.
 
-function selectImage(elementId) {
-  var x = document.getElementById(elementId);
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
-  }
-};
+The second function selectImage checked to see if the div linked to that image was displayed, and if not it was. Here the HTML code shows for example clicking on the image with id"i0" would toggle the display of div id"i0div" to display or not.
+![Skytest HTML](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skytestJS.png)
 
-'''
+I was happy with this solution, but after discussing with my mentor he made me aware of some problems with this approach.
 
+1. Since all the code, links and associated media are loaded into the HTML document, for the more extensive project I had in mind this would result in slow loading times, and massive downloads of content for site users that may not be required.
 
+2. This solution was too code light to constitute a strong project submission, and so we discussed finding a more effective approach to achieve this site functionality, and some other Javascript elements to incorporate.
+
+## Step 2: Skyguide
+
+My mentor suggested to me creating a variable which would contain all the information to be called on a click event. He game me an example of how this could be approached and I researched using Javascript for dynamic HTML.
+
+This next stage produced the code in the project files data.js and script.js. I have commented on the code in these files.
+
+## Step 3: Email JS
+
+After completing this new method, I discussed some further ideas for additional javascript elements I could include in the site. Having worked through the Code Insitute tutorial for creating a functioning backend for a contact form with EmailJS, this seemed like a useful addition to the site.
+
+However, having only followed the provided source code for the tutorials, I discovered that EmailJS has significantly updated it's service and after trying to unsuccessfully implement this functionality following the CI materials, I instead resorted to the official website docs for [EmailJS](https://www.emailjs.com/docs/).
+
+I have commented in the sendEmail.js file on this code. 
+
+## Step 4: Scroll
+
+Once my contact form was functioning correctly, I remembered having seen some examples of scroll functions on websites which clearly used Javascript to appear on scroll etc. At this point in the website's development I already had an html scroll to top button placed on a footer element, but I was interested to try this alternative approach.
+
+I used the code from this [W3Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp) guide and replaced my html with a javascript scroll to top function.
+
+## Step 5: Eden clock
+
+The final feature I wished to include on this site is a countdown timer. I watched numerous tutorials, and discussed with my mentor in our final meeting possibly using an API clock feature. However, this was dismissed as perhaps not the best solution.
+
+For players in Sky, each week the game resets at 00:00 Pacific Standard Time (PST/UTC-8), currently 0000 PDT/UTC-7 during Daylight Saving Time. When I learned exactly what UTC is and that Javascript can utilise it, I knew there would be a solution.
+
+I watched many tutorials about creating countdown timers, and the closet solution I came to myself was to create a timer that counted down to a specific date.
+
+Then I found this tutorial by [Vincoding](https://vincoding.com/weekly-repeating-countdown-timer-javascript*/) which I modified to create a weekly countdown clock that gives accurate time conversion and should reset at 00:00 PDT (07:00 UTC) every Sunday during daylight saving time. When the PDT switches back to PST for the game creators, the clock only requires to be modified by a digit for the correct time to continue to be displayed.
 
 # Testing User Stories from (UX) section
 
@@ -248,7 +272,7 @@ function selectImage(elementId) {
 
 4. I would like to feel that the information is informative and enhancing my experience with the Sky game and community.
 
--   The clickable information content includes a visual reminder, concise text and a video.
+-   The clickable information content includes a visual reminder, concise text and a video. The addition of the Eden clock is extremely useful and as a player I would refer to it!
 
 ## Revisiting returning User goals
 
