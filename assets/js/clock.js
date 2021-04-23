@@ -1,13 +1,12 @@
-/*Javascript UTC - 7 hour countdown clock
- Javascript repeating countdown clock code modified from source https://vincoding.com/weekly-repeating-countdown-timer-javascript/*/
-
+/* Javascript UTC - 7 hour countdown clock
+Javascript repeating countdown clock code modified from source https://vincoding.com/weekly-repeating-countdown-timer-javascript*/
 let curday;
 let secTime;
 let ticker;
 
 function getSeconds() {
     let nowDate = new Date();
-    let dy = 0; //Sunday through Saturday defined as 0 to 6
+    let dy = 0; //Days of the week Sunday through Saturday defined as 0 to 6
     let countertime = new Date(
         Date.UTC(
             nowDate.getUTCFullYear(),
