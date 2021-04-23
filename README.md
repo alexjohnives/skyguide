@@ -64,7 +64,11 @@ An interactive memory aid to collecting winged lights in Sky: Children of the li
 
 # Introduction
 
+[Sky: Children of the Light Official Game Website](https://thatgamecompany.com/sky/)
+
 I was a beta tester for this MMO (Massively Mulitplayer Online Game) in 2019. Having not played since it launched that same year, I revisited a couple of months ago to see how it had progressed. I discovered it had become incredibly popular with over 50 million downloads, a huge international online community and a significantly expanded virtual world to explore.
+
+![Sky: Children of the Light](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skythatgamecompany.png)
 
 What first appealed to me about Sky, is it's a game that promotes community, kindness and friendship. For this reason it attracts a wide range of age groups, and particularly many younger players.
 
