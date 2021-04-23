@@ -86,7 +86,7 @@ The goal of this project website is to create an interactive memory guide and re
 
 2. I wanted to create a site that provided engagement with the user, which promotes their experience of the game.
 
-3. I wanted the website information to be laid out in a logical form which would facilitate players refering to it as they play.
+3. I wanted the website information to be laid out in a logical form which would facilitate players referring to it as they play.
 
 4. I plan to take an expanded version of this website live in the future, and with this in mind wished to include a functioning contact section.
 
@@ -104,7 +104,7 @@ As a First Time user:
 
 1. I want my first impression of the site's design to be positive and to be on brand with the overarching themes of the game, which are colourful, welcoming and positive.
 
-2. I want the site purpose and use to be immediatly clear, with the emphasis being on getting the information I require.
+2. I want the site purpose and use to be immediately clear, with the emphasis being on getting the information I require.
 
 3. I want to easily understand the content and find it engaging.
 
@@ -122,15 +122,15 @@ As a Returning user:
 
 # Design 
 
-My immediate inspiration for the website was the game itself, which is visually stunning. It also resonates with me like its predessor Journey, which clearly has an Asian cultural influence incorporating Buddist iconography and architecture, traditional East Asian styings and anime. As a master's graduate in Chinese with over a decade living and working in East Asia, there is an aesthetic to the game that is both immediate and familiar to me.
+My immediate inspiration for the website was the game itself, which is visually stunning. It also resonates with me like its predecessor Journey, which clearly has an Asian cultural influence incorporating Buddist iconography and architecture, traditional East Asian stylings and anime. As a master's graduate in Chinese with over a decade living and working in East Asia, there is an aesthetic to the game that is both immediate and familiar to me.
 
 Perhaps because of this combined with the source material, I immediately had a clear vision for how I wanted my site to look. I utilised the game logo, images from the game and a sky blue to white gradient for my wireframes drawn up in the IOS app Procreate.
 
-I modifyed the logo with the additon of the word 'guide' in a warm orange, which I took inspiration for from my game avatar's kimono cape.
+I modified the logo with the addition of the word 'guide' in a warm orange, which I took inspiration for from my game avatar's kimono cape.
 
 ![Skyguide wireframe 1](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wireframe1.jpg)
 
-Together with the blue to white gradiant for the background to reflect a blue sky, I felt the wireframes immediatly achieved a design foundation I was satisfied with.
+Together with the blue to white gradient for the background to reflect a blue sky, I felt the wireframes   immediately achieved a design foundation I was satisfied with.
 
 ![Skyguide wireframe 2](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wireframe2.jpg)
 
@@ -140,7 +140,7 @@ From the outset I decided I wanted to use a HTML/ CSS responsive framework. I ex
 
 I decided on keeping my design clean and concise. Rather than importing my background gradient from Procreate, I found an online tool [CSS Gradient](https://cssgradient.io/) to create the background.
 
-For the other colours of the website I referred to the game and used the Google extension [Eye Dropper](https://eyedropper.org/) to take colour references. I then modified these in Procreate and approached the colour styings for this project using my own judgment. These can be seen in the area logos I created to add a more personal element to the site.
+For the other colours of the website I referred to the game and used the Google extension [Eye Dropper](https://eyedropper.org/) to take colour references. I then modified these in Procreate and approached the colour stylings for this project using my own judgment. These can be seen in the area logos I created to add a more personal element to the site.
 
 ## Typography
 
@@ -211,7 +211,7 @@ The method I came up with to achieve the click and display information aspect of
 
 After watching this, I found the approach I desired here [W3schools - how to toggle and hide/ show](https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp)
 
-From this exapmle I expanded the code to what you see below.
+From this example I expanded the code to what you see below.
 
 ![Skytest JS](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skytestJS.png)
 
@@ -236,7 +236,7 @@ This next stage produced the code in the project files data.js and script.js. I 
 
 ## Step 3: Email JS
 
-After completing this new method, I discussed some further ideas for additional javascript elements I could include in the site. Having worked through the Code Insitute tutorial for creating a functioning backend for a contact form with EmailJS, this seemed like a useful addition to the site.
+After completing this new method, I discussed some further ideas for additional javascript elements I could include in the site. Having worked through the Code Institute tutorial for creating a functioning backend for a contact form with EmailJS, this seemed like a useful addition to the site.
 
 However, having only followed the provided source code for the tutorials, I discovered that EmailJS has significantly updated it's service and after trying to unsuccessfully implement this functionality following the CI materials, I instead resorted to the official website docs for [EmailJS](https://www.emailjs.com/docs/).
 
@@ -266,9 +266,9 @@ Then I found this tutorial by [Vincoding](https://vincoding.com/weekly-repeating
 
 -   The user is greeted by a clean design featuring familiar elements including the game logo and a bright colour scheme.
 
-2. I want the site purpose and use to be immediatly clear, with the emphasis being on getting the information I require.
+2. I want the site purpose and use to be immediately clear, with the emphasis being on getting the information I require.
 
--   The landing page clearly and consisely details the purpose and use of the site.
+-   The landing page clearly and concisely details the purpose and use of the site.
 
 3. I want to easily understand the content and find it engaging.
 
@@ -297,7 +297,7 @@ As a Returning and Frequent visitor:
 
 # Testing
 
-The website was tested on popular browsers incluing Google Chrome, Safari, Opera and Mozilla Firefox.
+The website was tested on popular browsers including Google Chrome, Safari, Opera and Mozilla Firefox.
 
 ## HTML Testing
 
@@ -305,12 +305,12 @@ Html code was tested using the [W3 HTML Validator](https://validator.w3.org/)
 
 ### HTML Test Errors
 
-Running the pages through the validator, I discovered consistent errors thoughout which were due to the use of
+Running the pages through the validator, I discovered consistent errors throughout which were due to the use of
 
 1. A redundant Navbar ID (navebarDropdown) that was present in the Bootstrap example
 2. Sections lacking heading tags.
 
-I've includeded a sample error report from the sanctuary page that documents these errors accross all the pages.
+I've included a sample error report from the sanctuary page that documents these errors across all the pages.
 
 
 ![HTML result 1 Sanctuary a](https://github.com/alexjohnives/skyguide/blob/master/assets/images/validatorsanctuary1.jpg)
@@ -329,7 +329,7 @@ Also, for the Contact form the validator listed the use of the 'textarea' field 
 
 ### HTML Test Fixes
 
-Once all the redundant elements from the Navbar etc and the section tags were removed from the html, I restructured my text to incororate h1 and h2 titles. This solved most of the issues. 
+Once all the redundant elements from the Navbar etc and the section tags were removed from the html, I restructured my text to incorporate h1 and h2 titles. This solved most of the issues. 
 
 The website was retested and all the pages passed without any warnings or errors, except Eden.
 
@@ -353,7 +353,7 @@ Once this was removed, the CSS code received the all clear
 
 ## Javascript Testing
 
-I passed this project's Javascript code through [Esprima](https://esprima.org/demo/validate.html) and [beautifytools.com](https://beautifytools.com/javascript-validator.php) validators to check for errors. None were found although suggestions for alternate syntax were made.d
+I passed this project's Javascript code through [Esprima](https://esprima.org/demo/validate.html) and [beautifytools.com](https://beautifytools.com/javascript-validator.php) validators to check for errors. None were found although suggestions for alternate syntax were made.
 
 
 ## Accessibility Testing
@@ -399,17 +399,29 @@ Inspecting both the desktop and mobile versions of my website, I generated light
 
 Although I'm quite pleased with these results, they do highlight a couple of areas which I'm aware I need to improve in. 
 
-The first is correctly sizing and implementing image content, and the report clearly shows that this can be optimised. Currently the images are stated to be displayed at the incorrect aspect ratio, and also the incorrect resolution.
+The first is correctly sizing and implementing image content, and the report clearly shows that this can be optimised. Currently the images are stated to be displayed at the incorrect aspect ratio, and also the incorrect resolution which results in page loading slowdown. At this stage of the project so close to submission, I will take this information and find out what I can do to improve this aspect of my design going forward.
 
 ## Responsiveness Testing
 
 Responsiveness was tested using first [Responsinator](https://www.responsinator.com/)
 
-At this point I noticed that the navbar toggler element was not functioning. I opened the website on my 1st generation Iphone SE (which I find to be the ultimate test for modern mobile responsiveness) and confirmed that the toggler was non responsive on the Home page, but functioning for the rest of the site.
+At this point I noticed that the navbar toggler element was not functioning on my Home page. I opened the website on my 1st generation Iphone SE and confirmed that the toggler was non responsive on the Home page, but functioning for the rest of the site.
 
-Comparing my code, at this point I realised by removing ids in the Navbar earlier, I had removed the toggler functionality by mistake. I restored and retested.
+Comparing my code, at this point I realised by removing ids in the Navbar earlier, I had removed the toggler functionality by mistake. I restored and retested, and confirmed functionality had been restored.
 
-I reinspected the website using [Google Device Mode](https://developers.google.com/web/tools/chrome-devtools/device-mode) mode across a number of devices and encountered no issues.
+The responsinator also made me aware that my iframe video embeds were not being optimally displayed. Taken on my Iphone this picture shows the issue.
+
+![Incorrect sizing of Iframe on IphoneSE](https://github.com/alexjohnives/skyguide/blob/master/assets/images/iframedisplay.png)
+
+I researched and found that this is a issue due to iframes requiring a defined width and height and aspect ratios. Bootstrap offers responsive classes for these elements [Bootstrap 5 Ratio](https://getbootstrap.com/docs/5.0/helpers/ratio/#example), but using column classes in my project I could not find a satisfactory solution using these.
+
+Instead I found a CSS workaround, the best explanation I found here [Flavio Copes Responsive youtube videos](https://flaviocopes.com/responsive-youtube-videos).
+
+When I applied this solution, the Iframes displayed and resized correctly.
+
+![Corrected sizing of Iframe on IphoneSE](https://github.com/alexjohnives/skyguide/blob/master/assets/images/iframedisplaycorrected.png)
+
+I reinspected the website using [Google Device Mode](https://developers.google.com/web/tools/chrome-devtools/device-mode) mode, and these issues were resolved.
 
 # Bugs
 
