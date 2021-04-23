@@ -8,9 +8,11 @@ An interactive memory aid to collecting winged lights in Sky: Children of the li
 
 ![Website shown on different display sizes](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skyguideresponse.png)
 
+# Table of contents
+
 - [Introduction](#introduction)
 - [Project goals](#project-goals)
-- [User Experience](#user-experience)
+- [User Experience (UX)](#user-experience)
   * [First Time User](#first-time-user)
   * [Returning User requirements and expectations](#returning-user-requirements-and-expectations)
 - [Design](#design)
@@ -20,7 +22,7 @@ An interactive memory aid to collecting winged lights in Sky: Children of the li
   * [Images and Photo Media](#images-and-photo-media)
   * [Languages Used](#languages-used)
   * [Tools, Frameworks, Libraries and Programs used](#tools--frameworks--libraries-and-programs-used)
-- [Testing User Stories from (UX) section](#testing-user-stories-from--ux--section)
+- [Testing User Stories (UX)](#testing-user-stories-from--ux--section)
   * [Revisiting first time User goals](#revisiting-first-time-user-goals)
   * [Revisiting returning User goals](#revisiting-returning-user-goals)
 - [Testing](#testing)
@@ -30,8 +32,6 @@ An interactive memory aid to collecting winged lights in Sky: Children of the li
   * [CSS Testing](#css-testing)
     + [CSS Test Errors](#css-test-errors)
     + [CSS Test Error Fixes](#css-test-error-fixes)
-    + [CSS Test Warnings](#css-test-warnings)
-    + [CSS Test Warning Fixes](#css-test-warning-fixes)
   * [Accessibility Testing](#accessibility-testing)
   * [Accessibility Testing results - WAVE](#accessibility-testing-results---wave)
     + [WAVE Errors](#wave-errors)
@@ -156,7 +156,7 @@ The aforementioned [Sky Fandom Page](https://sky-children-of-the-light.fandom.co
 
 Text from the site's winged light guide was used and modified.
 
-Fan art and maps ![Sky Winged light location map](https://github.com/alexjohnives/skyguide/blob/master/assets/images/locationmap.png) proved invaluable.
+Fan art and maps such as the following example also proved useful as references ![Sky Winged light location map](https://github.com/alexjohnives/skyguide/blob/master/assets/images/locationmap.png)
 
 ## Languages Used
 
@@ -168,11 +168,11 @@ Javascript
 
 ## Tools, Frameworks, Libraries and Programs used
 
-[Visual Studio Code](https://code.visualstudio.com/): Version 1.55.2 was used as code editor. I cloned my Github repository and pushed most of my work from this environment.
+[Visual Studio Code](https://code.visualstudio.com/): Version 1.55.2 was used as code editor. I cloned my Github repository and pushed most of my work from this environment. I tried to utitlise the Prettier formatter extension but encountered some issues and so returned to the default.
 
 [Procreate](https://procreate.art/): I've found this app invaluable for creating the website wireframes, image editing and logos for this project.
 
-[Bootstrap 5.0.0 Beta 3](https://getbootstrap.com): I used the latest release of Bootstrap to assist with the responsiveness and styling of the website. I discovered that it was so new documentation about new features was sometimes limited. I did however refer a great deal to the Bootstrap 5 website documentation and examples.
+[Bootstrap 5.0.0 Beta 3](https://getbootstrap.com): I used the latest release of Bootstrap to assist with the responsiveness and styling of the website.
 
 [Bootstrap Icons v1.4.0](https://icons.getbootstrap.com): Bootstrap’s own icon set was employed for the scroll to top icon.
 
@@ -187,6 +187,48 @@ Javascript
 [Apple Quicktime](https://support.apple.com/en-gb/guide/quicktime-player/welcome/mac): Quicktime was used for video editing and primarily removing audio from recorded content.
 
 [Apple Preview](https://support.apple.com/en-gb/guide/preview/welcome/mac) Was used for the occastional photo edit
+
+# Project Javascript Code Development
+
+## Step 1: Show and Hide
+
+I have found the leap from using HTML and CSS to incorporating Javascript very challenging. While considering what project I wanted to create, I decided to focus on creating an interactive website of my own design.
+
+Unsure about how but working through what I wanted to achieve, I built a practice website Skytest.
+
+The method I came up with to achieve the click and display information aspect of the site, was based on showing and hiding HTML div elements.
+
+![Skytest2](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skytestHTML.png)
+
+'''
+window.addEventListener('load', (event) => {
+  
+  addImageSelector();
+
+});
+
+function addImageSelector() {
+  const imgSelected = document.querySelectorAll('.img-select');
+
+imgSelected.forEach((imgSelect) => {
+  imgSelect.addEventListener('click', () => {
+    imgSelect.classList.toggle('activeimg');
+  });
+});
+}
+
+function selectImage(elementId) {
+  var x = document.getElementById(elementId);
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+};
+
+'''
+
+
 
 # Testing User Stories from (UX) section
 
@@ -223,6 +265,7 @@ As a Returning and Frequent visitor:
 3. That the site is provided by a fan of the game who is familiar with the nomenclature and game culture.
 
 -   The site uses words and references that users will already be familiar with. The information sections.
+
 
 # Testing
 
@@ -280,11 +323,10 @@ Once this was removed, the CSS code received the all clear
 
 ![CSS Validation successful](https://github.com/alexjohnives/skyguide/blob/master/assets/images/cssclear.png))
 
-### CSS Test Warnings
+## Javascript Testing
 
-![CSS result 3]()
+I passed this project's Javascript code through [Esprima](https://esprima.org/demo/validate.html) and [beautifytools.com](https://beautifytools.com/javascript-validator.php) validators to check for errors. None were found although suggestions for alternate syntax were made.d
 
-### CSS Test Warning Fixes
 
 ## Accessibility Testing
 
@@ -308,33 +350,42 @@ Once this was removed, the CSS code received the all clear
 
 ## Accessibility Test results - Google Lighthouse
 
+Inspecting both the desktop and mobile versions of my website, I generated lighthouse reports which again showed recurring results for each webpage. I've included sample reports for the site index.html as a reference.
+
 ### Mobile
 
-![Google Lighthouse Results for index.html]()
+![Google Lighthouse Results 1 for index.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/lighthousemobile1.png)
 
-![Google Lighthouse Results for about.html]()
+![Google Lighthouse Results 2 for index.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/lighthousemobile2.png)
 
 ### Desktop
 
-![Google Lighthouse Results for index.html]()
+![Google Lighthouse Results 1 for index.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/lighthouse1.png)
 
-![Google Lighthouse Results for index.html]()
+![Google Lighthouse Results 2 for index.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/lighthouse2.png)
+
+![Google Lighthouse Results 3 for index.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/lighthouse3.png)
+
 
 ### Accessibility Test Analysis - Google Lighthouse
 
-![Google Lighthouse Results for index.html]()
+Although I'm quite pleased with these results, they do highlight a couple of areas which I'm aware I need to improve in. 
+
+The first is correctly sizing and implementing image content, and the report clearly shows that this can be optimised. Currently the images are stated to be displayed at the incorrect aspect ratio, and also the incorrect resolution.
 
 ## Responsiveness Testing
 
 Responsiveness was tested using first [Responsinator](https://www.responsinator.com/)
 
-![Responsinator Results for index.html]()
+At this point I noticed that the navbar toggler element was not functioning. I opened the website on my 1st generation Iphone SE (which I find to be the ultimate test for modern mobile responsiveness) and confirmed that the toggler was non responsive on the Home page, but functioning for the rest of the site.
 
-I inspected the website using [Google Device Mode](https://developers.google.com/web/tools/chrome-devtools/device-mode) mode across a number of devices and encountered no issues.
+Comparing my code, at this point I realised by removing ids in the Navbar earlier, I had removed the toggler functionality by mistake. I restored and retested.
+
+I reinspected the website using [Google Device Mode](https://developers.google.com/web/tools/chrome-devtools/device-mode) mode across a number of devices and encountered no issues.
 
 # Bugs
 
-During the development of this website I encountered a couple of glitches.
+During the development of this website I did not encounter any bugs.
 
 ## Known Bugs
 
@@ -394,13 +445,13 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Unpacking objects: 100% (10/10), done.
 ```
 
-# Credits
+# Code acknowledgments
 
--   All content was written by the developer with exceptions detailed below:
+All content was written by the developer with exceptions detailed below:
 
-# Code
+Javascript repeating countdown clock code sourced then modified from [Vincoding.com](https://vincoding.com/weekly-repeating-countdown-timer-javascript/*/)
 
-    The code was modified for the purposes of this project.
+Scroll to top button code sourced then modified from [w3schools.com](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 
 # Media
 
