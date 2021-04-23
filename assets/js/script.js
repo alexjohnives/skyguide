@@ -4,17 +4,19 @@ Fetches the information of the wings and returns the dynamically created HTML st
 function getCardHTML(wingTitle) {
     let wings = wingInformation[wingTitle];
     let wingCardInformation = `
-  <div class="row mt-5 mb-5" id="${wings['id']}">
+   <div class="row mt-5 mb-5" id="${wings['id']}">
     <div class="col-sm">
         <h2 class="wing-title mt-3">${wings['title']}</h2>
         <p class="mt-3">${wings['description1']}</p>
         <p class="mt-3">${wings['description2']}</p>
     </div>
     <div class="col-sm">
-        <iframe width="560" height="315" src="${wings['youtubeLink']}" title="YouTube video player"
+    <div class="video-container">
+        <iframe src="${wings['youtubeLink']}" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
+          </div>
     </div>
   </div>
   `;
