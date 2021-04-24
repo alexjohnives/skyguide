@@ -104,7 +104,7 @@ p {
 .video-container {
     overflow: hidden;
     position: relative;
-    width:100%;
+    width: 100%;
 }
 
 .video-container::after {
