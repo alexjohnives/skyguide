@@ -1,5 +1,6 @@
 /*
 Fetches the information of the wings and returns the dynamically created HTML string
+Example approach shown to me by my mentor Reuben Ferrante
 */
 function getCardHTML(wingTitle) {
     let wings = wingInformation[wingTitle];
