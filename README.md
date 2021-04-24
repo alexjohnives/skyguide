@@ -430,7 +430,7 @@ Comparing my code, at this point I realised by removing ids in the Navbar earlie
 
 The responsinator also made me aware that my iframe video embeds were not being optimally displayed. Taken on my Iphone this picture shows the issue.
 
-![Incorrect sizing of Iframe on IphoneSE](https://github.com/alexjohnives/skyguide/blob/master/assets/images/iframedisplay.png)
+![Incorrect sizing of Iframe on IphoneSE](https://github.com/alexjohnives/skyguide/blob/master/assets/images/iframedisplay.PNG)
 
 I researched and found that this is a issue due to iframes requiring a defined width and height and aspect ratios. Bootstrap offers responsive classes for these elements [Bootstrap 5 Ratio](https://getbootstrap.com/docs/5.0/helpers/ratio/#example), but using column classes in my project I could not find a satisfactory solution using these.
 
@@ -438,7 +438,7 @@ Instead I found a CSS workaround, the best explanation I found here [Flavio Cope
 
 When I applied this solution, the Iframes displayed and resized correctly.
 
-![Corrected sizing of Iframe on IphoneSE](https://github.com/alexjohnives/skyguide/blob/master/assets/images/iframedisplaycorrected.png)
+![Corrected sizing of Iframe on IphoneSE](https://github.com/alexjohnives/skyguide/blob/master/assets/images/iframedisplaycorrected.PNG)
 
 I reinspected the website using [Google Device Mode](https://developers.google.com/web/tools/chrome-devtools/device-mode) mode, and these issues were resolved.
 
