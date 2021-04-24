@@ -373,7 +373,7 @@ I passed this project's Javascript code through [Esprima](https://esprima.org/de
 
 Using [Wave](https://wave.webaim.org/) to view the site, it flagged up several areas needing attention.
 
-![Wave Results for index.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/ndex.png)
+![Wave Results for index.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/waveindex.png)
 
 Consistent accross all the pages I was missing decriptive alt tags for the images and Navbar brand. The tool also revealed that the Navbar had some duplicate links, and I clarified the function of aria labels.
 
