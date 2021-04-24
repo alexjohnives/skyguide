@@ -173,7 +173,9 @@ The aforementioned [Sky Fandom Page](https://sky-children-of-the-light.fandom.co
 
 Text from the site's winged light guide was referenced with permission.
 
-Fan art and maps such as the following example also proved useful as references ![Sky Winged light location map](https://github.com/alexjohnives/skyguide/blob/master/assets/images/locationmap.png)
+Fan art and maps such as the following example also proved useful as references: 
+
+![Sky Winged light location map](https://github.com/alexjohnives/skyguide/blob/master/assets/images/locationmap.png)
 
 ## Languages Used
 
@@ -226,6 +228,7 @@ In this code, which I began with at the outset of Skyguide, a click select class
 For each image then, the toggle active class was applied.
 
 The second function selectImage checked to see if the div linked to that image was displayed, and if not it was. Here the HTML code shows for example clicking on the image with id"i0" would toggle the display of div id"i0div" to display or not.
+
 ![Skytest HTML](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skytestJS.png)
 
 I was happy with this solution, but after discussing with my mentor he made me aware of some problems with this approach.
@@ -252,7 +255,7 @@ I have commented in the sendEmail.js file on this code.
 
 Once my contact form was functioning correctly, I remembered having seen some examples of scroll functions on websites which clearly used Javascript to appear on scroll etc. At this point in the website's development I already had an html scroll to top button placed on a footer element, but I was interested to try this alternative approach.
 
-I used the code from this [W3Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp) guide and replaced my html with a javascript scroll to top function.
+I used the code from this [W3Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top) guide and replaced my html with a javascript scroll to top function.
 
 ## Step 5: Eden clock
 
@@ -313,7 +316,7 @@ Html code was tested using the [W3 HTML Validator](https://validator.w3.org/)
 
 Running the pages through the validator, I discovered consistent errors throughout which were due to the use of
 
-1. A redundant Navbar ID (navebarDropdown) that was present in the Bootstrap example
+1. A redundant Navbar ID (navbarDropdown) that was present in the Bootstrap example
 2. Sections lacking heading tags.
 
 I've included a sample error report from the sanctuary page that documents these errors across all the pages.
@@ -325,7 +328,7 @@ I've included a sample error report from the sanctuary page that documents these
 
 In addition the Validator flagged up a problem with the use of the countholder id for the clock display div element.
 
-![HTML result 3 Eden](https://github.com/alexjohnives/skyguide/blob/master/assets/images/validatoreden.jpg)
+![HTML result 3 Eden](https://github.com/alexjohnives/skyguide/blob/master/assets/images/validatoreden.png)
 
 Also, for the Contact form the validator listed the use of the 'textarea' field and 'type' as errors. These were from when I was trying different methods to create the contact form and I clearly forgot to remove them.
 
