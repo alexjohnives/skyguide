@@ -1,10 +1,10 @@
-# Skyguide : An interactive game guide
+# Skyguide : An interactive game guide to Sky Children of the light 
 
 [Skyguide](https://alexjohnives.github.io/skyguide/)
 
 <https://alexjohnives.github.io/skyguide/index.html>
 
-An interactive memory aid to collecting winged lights in Sky: Children of the light
+An interactive memory aid and guide to collecting winged lights in Sky: Children of the light
 
 ![Website shown on different display sizes](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skyguideresponse.png)
 
@@ -66,15 +66,17 @@ An interactive memory aid to collecting winged lights in Sky: Children of the li
 
 [Sky: Children of the Light Official Game Website](https://thatgamecompany.com/sky/)
 
-I was a beta tester for this MMO (Massively Mulitplayer Online Game) in 2019. Having not played since it launched that same year, I revisited a couple of months ago to see how it had progressed. I discovered it had become incredibly popular with over 50 million downloads, a huge international online community and a significantly expanded virtual world to explore.
+I was a beta tester for this MMO (Massively Mulitplayer Online Game) in 2019. Having not played since it launched that same year, I revisited a couple of months ago to see how it had progressed. 
+
+I discovered it had become incredibly popular with over 50 million downloads, a huge international online community and a significantly expanded virtual world to explore.
 
 ![Sky: Children of the Light](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skythatgamecompany.png)
 
-What first appealed to me about Sky, is it's a game that promotes community, kindness and friendship. For this reason it attracts a wide range of age groups, and particularly many younger players.
+What first appealed to me about Sky, is it's a game that promotes community, kindness and friendship. For this reason it attracts a wide range of age groups, with the creator Jenova Chen stating he wanted to create a game that even families could play together.
 
-To progress, players have to collect light which they can trade for other in game currencies, and winged lights which they use to complete the final level of the game. For players who want to progress, they soon learn that there are patterns of play for collecting these two elements which yield the optimum results.
+To progress, players have to collect light which they can trade for other in game currencies, and winged lights which they use to complete the final level of the game. Players soon learn that there are patterns of play for collecting these two elements which yield the optimum results.
 
-Winged lights in the game are at fixed locations, and there are over 100 of them. Once collected, these can be traded in once a week before the game resets on Sundays 0000 at UTC (-7hours).
+Winged lights in the game are at fixed locations, and there are over 100 of them. Once collected, these can be traded in once a week before the game resets on Sundays at 0000 PST or PDT UTC (-8hours or -7hours).
 
 Having learned that many players resort to reading game guides and watching videos, I thought that an interactive website could instead provide the optimum resource for players in locating and memorising these locations.
 
@@ -84,7 +86,7 @@ The goal of this project website is to create an interactive memory guide and re
 
 1. I wanted to present a guide that does not spoil the content of the game, and acts more as an interactive assistive visual aid, enabling first time and more experienced users to request only the information they require.
 
-2. I wanted to create a site that provided engagement with the user, which promotes their experience of the game.
+2. I wanted to create a site that provided engagement with the user, which promotes their experience of the game and is visually appealing.
 
 3. I wanted the website information to be laid out in a logical form which would facilitate players referring to it as they play.
 
@@ -102,7 +104,7 @@ I imagined as a user a tool that would serve as a memory aid, showing me a visua
 
 As a First Time user:
 
-1. I want my first impression of the site's design to be positive and to be on brand with the overarching themes of the game, which are colourful, welcoming and positive.
+1. I want my first impression of the site's design to be positive and to be on brand with the overarching themes of the game, which are colourful, vibrant welcoming and positive.
 
 2. I want the site purpose and use to be immediately clear, with the emphasis being on getting the information I require.
 
@@ -142,6 +144,10 @@ I decided on keeping my design clean and concise. Rather than importing my backg
 
 For the other colours of the website I referred to the game and used the Google extension [Eye Dropper](https://eyedropper.org/) to take colour references. I then modified these in Procreate and approached the colour stylings for this project using my own judgment. These can be seen in the area logos I created to add a more personal element to the site.
 
+The one colour I avoided was Red. Sky has a large asian following and red text has negative connotations. With this knowledge, I thought it was best to avoid it's use.
+
+I experimented with different text colours and settled on using a black with the opacity adjusted to soften the visual, but keep everything legible.
+
 ## Typography
 
 I referred to the game website [Sky: Children of the light](https://thatgamecompany.com/sky/) and liked their use of the google font Lato, which I paired with Roboto for the website text. Sans Serif was selected as the fallback font.
@@ -152,7 +158,7 @@ Utilising bootstrap in the creation of this site I used their newly released Boo
 
 ## Images and Photo Media
 
-With a couple of exceptions, all the images and movie elements utilised in this project were taken by me using the in game photo and film capture options.
+With the couple of exceptions listed below, all the artwork, images and film elements utilised in this project were created by me using the in game photo and film capture options.
 
 ![Winged Light](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wingedlight.png)
 
@@ -165,7 +171,7 @@ This winged art image on the front page was created by user PlagueDoctorJed who 
 
 The aforementioned [Sky Fandom Page](https://sky-children-of-the-light.fandom.com/wiki/Sky:_Children_of_the_Light) was invaluable for planning the logic of presenting the information.
 
-Text from the site's winged light guide was used and modified.
+Text from the site's winged light guide was referenced with permission.
 
 Fan art and maps such as the following example also proved useful as references ![Sky Winged light location map](https://github.com/alexjohnives/skyguide/blob/master/assets/images/locationmap.png)
 
@@ -362,19 +368,23 @@ I passed this project's Javascript code through [Esprima](https://esprima.org/de
 
 ## Accessibility Testing results - WAVE
 
-![Wave Results for index.html]()
+Using [Wave](https://wave.webaim.org/) to view the site, it flagged up several areas needing attention.
 
-![Wave Results for about.html]()
+![Wave Results for index.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/waveindex.png)
 
-### WAVE Errors
+Consistent accross all the pages I was missing decriptive alt tags for the images and Navbar brand. The tool also revealed that the Navbar had some duplicate links, and I clarified the function of aria labels.
 
-![Wave Errors corrected for index.html]()
-
-![Wave Errors corrected for about.html]()
-
-### WAVE Alerts
+The only other issue the site reported was with my scroll to top button, which was flagged as an alert as 'a device dependant handler', which of course cannot be used by keyboard users. As it is only a button to add convenience for scrolling functionality, I did not make any changes. 
 
 ### WAVE Test Fixes
+
+![Wave Results for butterfly.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/waveprarie.png)
+
+I worked my way through the html files and added missing alt descriptions, changed the text structure to include logical headings structure flow etc. 
+
+While using the site I discovered that if I clicked on my dropdown Navbar elements and there was not a link attached, then the site would report a missing link. I left href"#" elements in For the Ilse and Prarie buttons so that when dropdowns were clicked, they always linked to the current page. This I am not sure if it is best practice, but looking at references and to keep the current structure, it seemed the best solution without risking dead links.
+
+After these changes were made, no errors were reported and only alerts remained about the scroll navigation and duplicate links in the navbar.
 
 ## Accessibility Test results - Google Lighthouse
 
@@ -401,6 +411,12 @@ Although I'm quite pleased with these results, they do highlight a couple of are
 
 The first is correctly sizing and implementing image content, and the report clearly shows that this can be optimised. Currently the images are stated to be displayed at the incorrect aspect ratio, and also the incorrect resolution which results in page loading slowdown. At this stage of the project so close to submission, I will take this information and find out what I can do to improve this aspect of my design going forward.
 
+Lighthouse also made me aware my website pages were lacking meta descriptions. This I amended and ran the tests again.
+
+![Google Lighthouse Final test result for index.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/lighthousefinal.png)
+
+After all these issues were addressed, I was satisfied that only my image sizing compromised my scores in the best practices section. Everywhere else, the site scored well.
+
 ## Responsiveness Testing
 
 Responsiveness was tested using first [Responsinator](https://www.responsinator.com/)
@@ -425,7 +441,7 @@ I reinspected the website using [Google Device Mode](https://developers.google.c
 
 # Bugs
 
-During the development of this website I did not encounter any bugs.
+During the development of this website I did not encounter any bugs. 
 
 ## Known Bugs
 
@@ -433,6 +449,9 @@ There are no known bugs on this website.
 
 ## Other points of note
 
+Just prior to submission, my mentor stated that if this website was to grow any further, a restructuring of the html pages and associated elements with a new folder structure would be desirable. However, he said at this time, it is probably on the cusp and therefore in his opinion unlikely I would be penalised for submitting it as is.
+
+Following this, I looked into restructuring and again at this time recognise that this is an improvement that can be made, but choose to submit the project as it is.
 
 # Deployment
 
@@ -497,8 +516,14 @@ Scroll to top button code sourced then modified from [w3schools.com](https://www
 
 -   Credit to all the artists whose creative content features on this site, permission has been asked and granted for our collaborations and creative product to be documented here.
 
+PlaguedoctorJed, whose real name is still unknown, agreed for his artwork to be used.
+
+The [Sky Fandom and Wiki pages](https://sky-children-of-the-light.fandom.com/wiki/Sky:_Children_of_the_Light_Wiki) were an invaluable resource and again permission was given for them to be referenced in the development of this website.
+
 # Acknowledgements
 
--   Thank you to my tutor Reuben Ferrante for his feedback, knowledge and positive guidance. Also
+-   Thank you to my tutor Reuben Ferrante for his feedback, knowledge and positive guidance.
 
--   Thanks to Dr Lindsey Smith for all the cups of tea put my way while working.
+-   Thank you to tutor support at Code Institute. There are some very talented and knowledgable people there and their guidance has been invaluable.
+
+-   Thanks to Dr Lindsey Smith for all the cups of tea put my way while working and continuing to share Canada lockdown life with me!
