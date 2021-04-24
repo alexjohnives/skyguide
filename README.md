@@ -350,7 +350,7 @@ CSS was tested using the W3C CSS Validator Services
 
 ### CSS Test Errors
 
-The CSS Validator showed a Parse error, which I could not understand until I reviewed my code and found a rouge '/*' open comment remaining
+The CSS Validator showed a Parse error, which I could not understand until I reviewed my code and found a rogue '/*' open comment remaining in the code.
 
 ![CSS Error result](https://github.com/alexjohnives/skyguide/blob/master/assets/images/csserror.png))
 
