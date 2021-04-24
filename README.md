@@ -8,20 +8,22 @@ An interactive memory aid and guide to collecting winged lights in Sky: Children
 
 ![Website shown on different display sizes](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skyguideresponse.png)
 
-# Table of contents
-- [Table of contents](#table-of-contents)
+# Table of Contents
+
 - [Introduction](#introduction)
 - [Project goals](#project-goals)
 - [User Experience](#user-experience)
   * [First Time User](#first-time-user)
   * [Returning User requirements and expectations](#returning-user-requirements-and-expectations)
 - [Design](#design)
+  * [Design Logic - Achieving a mnemonic guide](#design-logic---achieving-a-mnemonic-guide)
   * [Color Palette](#color-palette)
   * [Typography](#typography)
   * [Icons](#icons)
   * [Images and Photo Media](#images-and-photo-media)
   * [Other resources](#other-resources)
-  * [Languages Used](#languages-used)
+  * [Future improvments?](#future-improvments-)
+- [Languages Used](#languages-used)
   * [Tools, Frameworks, Libraries and Programs used](#tools--frameworks--libraries-and-programs-used)
 - [Skyguide Javascript Code Development](#skyguide-javascript-code-development)
   * [Step 1: Skytest Toggle Display.](#step-1--skytest-toggle-display)
@@ -42,8 +44,6 @@ An interactive memory aid and guide to collecting winged lights in Sky: Children
   * [Javascript Testing](#javascript-testing)
   * [Accessibility Testing](#accessibility-testing)
   * [Accessibility Testing results - WAVE](#accessibility-testing-results---wave)
-    + [WAVE Errors](#wave-errors)
-    + [WAVE Alerts](#wave-alerts)
     + [WAVE Test Fixes](#wave-test-fixes)
   * [Accessibility Test results - Google Lighthouse](#accessibility-test-results---google-lighthouse)
     + [Mobile](#mobile)
@@ -77,8 +77,6 @@ What first appealed to me about Sky, is it's a game that promotes community, kin
 To progress, players have to collect light which they can trade for other in game currencies, and winged lights which they use to complete the final level of the game. Players soon learn that there are patterns of play for collecting these two elements which yield the optimum results.
 
 Winged lights in the game are at fixed locations, and there are over 100 of them. Once collected, these can be traded in once a week before the game resets on Sundays at 0000 PST or PDT UTC (-8hours or -7hours).
-
-Having learned that many players resort to reading game guides and watching videos, I thought that an interactive website could instead provide the optimum resource for players in locating and memorising these locations.
 
 # Project goals
 
@@ -132,11 +130,31 @@ I modified the logo with the addition of the word 'guide' in a warm orange, whic
 
 ![Skyguide wireframe 1](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wireframe1.jpg)
 
-Together with the blue to white gradient for the background to reflect a blue sky, I felt the wireframes   immediately achieved a design foundation I was satisfied with.
+Together with the blue to white gradient for the background to reflect a blue sky, I felt the wireframes immediately achieved a design foundation I was satisfied with.
 
 ![Skyguide wireframe 2](https://github.com/alexjohnives/skyguide/blob/master/assets/images/wireframe2.jpg)
 
+In the wireframe shown above, you can see my first idea was to select items you had already collected and what was missing would be shown after pressing a button etc. However, after considering this approach further I thought it to be illogical.
+
 From the outset I decided I wanted to use a HTML/ CSS responsive framework. I explored [Materialize](https://materializecss.com/) but settled on Bootstrap 5 instead as I am already familiar with the framework from my first project.
+
+## Design Logic - Achieving a mnemonic guide
+
+To understand the logic of the design, it is necessary to understand something of the game, as this website guide was designed to assist players.
+
+In Sky there are seven different areas of play. This website as a working model of a concept only focuses on the first two for the playing guide. These are Ilse of Dawn and Daylight Prarie.
+
+The object of the website is to serve as a guide or a mnemonic aid to locating the game winged lights. When as many as possible are collected, players can visit the final level of the game where they give up everything they have collected to trade for another game currency. After this, they have to begin collecting the winged light again.
+
+For new and experienced players alike, with over 100 to find, it can be difficult to remember what you have or have not collected each week. Many players have devised collection routes, however since Sky is meant to be a social platform, it should be and is easy to be distracted from the weekly task.
+
+For new players likewise, they will have an impression of what they have collected or where they have visited, but if refering to an online guide, textual descriptions can feel like an abstraction from what is essentially a visual medium. Also watching a video guide detracts from their own experience of playing the game.
+
+I therefore came up with the idea of a mnemonic guide, that follows the logic of the game enough so players can easily know where they have visited. Furthermore, the clickable images in each of these sections provides a visual cue for where the winged light is located. For players familiar with the game, these locations should be immediately recognisable, and challenge you to remember if you have visited that location and collected or not.
+
+If further information is required, as would be the case for new players who need more of a guide, then the images can be clicked to display a short youtube video and descriptive text. Some people like to read, and some would rather watch a video! Importantly though, this content is designed to assist with your own personal playing experience. For example, at the request of the developers and to allow videos to be viewed while the game, the videos do not include music or sound. 
+
+The Website design follows the flow of the game so that it would be very easy to play, and refer to it as you progressed.
 
 ## Color Palette
 
@@ -177,7 +195,11 @@ Fan art and maps such as the following example also proved useful as references:
 
 ![Sky Winged light location map](https://github.com/alexjohnives/skyguide/blob/master/assets/images/locationmap.png)
 
-## Languages Used
+## Future improvments?
+
+Having now created a working example of this website, I see the potential to include a great deal more content and other aspects of the game.
+
+# Languages Used
 
 HTML5
 
