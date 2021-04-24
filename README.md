@@ -381,7 +381,7 @@ The only other issue the site reported was with my scroll to top button, which w
 
 ### WAVE Test Fixes
 
-![Wave Results for butterfly.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/waveprarie.png)
+![Wave Results for butterfly.html](https://github.com/alexjohnives/skyguide/blob/master/assets/images/waveprairie.png)
 
 I worked my way through the html files and added missing alt descriptions, changed the text structure to include logical headings structure flow etc. 
 
