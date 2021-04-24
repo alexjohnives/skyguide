@@ -2,8 +2,6 @@
 
 [Skyguide](https://alexjohnives.github.io/skyguide/)
 
-<https://alexjohnives.github.io/skyguide/index.html>
-
 An interactive memory aid and guide to collecting winged lights in Sky: Children of the light
 
 ![Website shown on different display sizes](https://github.com/alexjohnives/skyguide/blob/master/assets/images/skyguideresponse.png)
